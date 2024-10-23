@@ -69,7 +69,7 @@
 	width: 3840px;
 	position: absolute;
 	left: 0px;
-	bottom: 80px;
+	top: 1960px;
 }
 
 .component_leave {
@@ -132,7 +132,7 @@
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-	position: absolute;
+	/* position: absolute; */
 	-webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.1);
 	box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
@@ -352,11 +352,11 @@ html {
 		width: 2160px;
 		position: absolute;
 		left: 0px;
-		bottom: 80px;
+		top: 3640px;
 	}
 	.component_leave {
-		position: absolute;
-		top: 3352px;
+		/* position: absolute; */
+		/* top: 3352px; */
 		left: 100px;
 		width: 210px;
 		height: 96px;
@@ -373,10 +373,10 @@ html {
 		height: 100%;
 	}
 	.user {
-		position: absolute;
-		position: absolute;
-		top: 3340px;
-		left: 1610px;
+		/* position: absolute; */
+		/* position: absolute; */
+		/* top: 3340px; */
+		/* left: 1610px; */
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
