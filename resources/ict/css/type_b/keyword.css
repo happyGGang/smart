@@ -17,6 +17,13 @@
 	overflow: hidden;
 }
 
+#landscape_02 {
+	width: 3200px;
+	height: 1070px;
+	margin-top: 410px;
+	overflow: visible;
+}
+
 #portrait_01,
 #portrait_02,
 #portrait_03,
@@ -87,9 +94,9 @@
 	display: block;
 	position: relative;
 	border-top: 3px solid #191f28;
-	height: 3036px;
-	width: 1800px;
-	top: 540px;
+	height: 1630px;
+	width: 3180px;
+	top: 462px;
 	margin: 0 auto;
 }
 
@@ -115,10 +122,10 @@
 	gap: 28px;
 	align-items: center;
 	justify-content: center;
-	width: 3840px;
+	width: 100%;
 	position: absolute;
 	left: 0;
-	top: 533px;
+	top: 0;
 }
 
 .recommendedbooks_wrap .reco_tit {
@@ -143,6 +150,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+#landscape_02 .swiper-container {
+	height: 1070px;
+	width: 3200px;
 }
 
 .recommendedbooks_wrap .slide-item {
@@ -238,27 +250,33 @@
 /*02*/
 #landscape_02 .swiper-slide {
 	display: grid !important;
-	padding: 0 222px;
+	/* padding: 0 222px; */
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(1, auto);
-	grid-row-gap: 80px;
-	grid-column-gap: 163px;
+	/* grid-row-gap: 80px; */
+	grid-column-gap: 160px;
 	justify-items: center;
+	opacity: 0;
+}
+
+#landscape_02 .swiper-slide-active {
+	opacity: 1;
 }
 
 #landscape_02 .slide-item {
-	height: 690px;
+	height: 964px;
+	width: 510px;
 }
 
 #landscape_02 .book_title {
 	font-family: 'Pretendard-Semibold', sans-serif;
-	font-size: 48px;
+	font-size: 52px;
 	font-weight: 500;
 	font-style: normal;
 	line-height: 140%;
 	overflow: hidden;
 	width: 100%;
-	max-width: 358px;
+	max-width: 510px;
 	margin-top: 36px;
 	margin-bottom: 8px;
 	white-space: nowrap;
@@ -269,13 +287,13 @@
 
 #landscape_02 .writer {
 	font-family: 'Pretendard-Regular', sans-serif;
-	font-size: 38px;
+	font-size: 44px;
 	font-weight: 400;
 	font-style: normal;
 	line-height: normal;
 	overflow: hidden;
 	width: 100%;
-	max-width: 358px;
+	max-width: 510px;
 	white-space: nowrap;
 	letter-spacing: -1px;
 	text-transform: capitalize;
@@ -291,16 +309,16 @@
 }
 
 #landscape_02 .slide-item img {
-	width: 360px;
-	height: 554px;
+	width: 510px;
+	height: 784px;
 	border-radius: 24px;
-	box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.2);
+	box-shadow: 27px 36px 54px 0px rgba(0, 0, 0, 0.15);
 	object-fit: cover;
 }
 
 #landscape_02 .swiper-pagination {
 	position: absolute !important;
-	top: 1560px !important;
+	top: 1450px !important;
 	display: flex !important;
 	justify-content: center;
 	gap: 40px !important;
@@ -490,6 +508,14 @@
 		height: 3036px;
 		overflow: hidden;
 	}
+	#portrait_02 {
+		height: 2500px;
+		margin-top: 360px;
+	}
+	#portrait_02 .swiper-container {
+		height: 2330px;
+	}
+
 	.recommendedbooks_wrap {
 		background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%);
 		width: 2160px;
@@ -501,6 +527,15 @@
 		object-fit: cover;
 		position: relative;
 		overflow: hidden;
+	}
+	.recommendedbooks_wrap .reco_tab_cont {
+		display: block;
+		position: relative;
+		border-top: 3px solid #191f28;
+		height: 3036px;
+		width: 1800px;
+		top: 540px;
+		margin: 0 auto;
 	}
 
 	.recommendedbooks_wrap .tab_content.active {
@@ -583,20 +618,20 @@
 	}
 	#portrait_02 .swiper-slide {
 		display: grid !important;
-		padding: 0 222px;
+		/* padding: 0 222px; */
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(3, auto);
-		grid-row-gap: 80px;
-		grid-column-gap: 163px;
+		grid-row-gap: 110px;
+		grid-column-gap: 100px;
 		justify-items: center;
 	}
 
 	#portrait_02 .slide-item {
-		height: 690px;
+		height: 714px;
 	}
 
 	#portrait_02 .book_title {
-		font-family: 'Pretendard-Semibold', sans-serif;
+		font-family: 'Pretendard-Medium', sans-serif;
 		font-size: 48px;
 		font-weight: 500;
 		font-style: normal;
@@ -612,8 +647,8 @@
 		color: #191f28;
 	}
 	#portrait_02 .writer {
-		font-family: 'Pretendard-Regular', sans-serif;
-		font-size: 38px;
+		font-family: 'Pretendard-Medium', sans-serif;
+		font-size: 40px;
 		font-weight: 400;
 		font-style: normal;
 		line-height: normal;
@@ -636,7 +671,7 @@
 
 	#portrait_02 .slide-item img {
 		width: 360px;
-		height: 554px;
+		height: 540px;
 		border-radius: 24px;
 		box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.2);
 		object-fit: cover;
@@ -644,7 +679,7 @@
 
 	#portrait_02 .swiper-pagination {
 		position: absolute !important;
-		top: 1560px !important;
+		top: 2778px !important;
 		display: flex !important;
 		justify-content: center;
 		gap: 40px !important;
