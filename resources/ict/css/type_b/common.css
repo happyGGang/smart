@@ -618,21 +618,22 @@ html {
 		width: 1920px;
 		position: absolute;
 		left: 0px;
-		bottom: 40px;
+		/* bottom: 40px; */
+		top: 980px;
 	}
 
 	.component_leave {
 		width: 105px;
 		height: 48px;
-		left: 210px;
-		top: 978px;
+		/* left: 210px; */
+		/* top: 978px; */
 	}
 	.user {
 		width: 225px;
 		height: 60px;
-		position: absolute;
-		left: 1646px;
-		top: 972px;
+		/* position: absolute; */
+		/* left: 1646px; */
+		/* top: 972px; */
 		border-radius: 100px;
 		padding: 6px 20px 6px 5px;
 		gap: 5px;
@@ -688,17 +689,18 @@ html {
 		padding: 0px 50px 0px 50px;
 		width: 1080px;
 		bottom: 40px;
+		top: 1820px;
 	}
 	.component_leave {
-		top: 1676px;
-		left: 50px;
+		/* top: 1676px; */
+		/* left: 50px; */
 		width: 105px;
 		height: 48px;
 	}
 	.user {
-		position: absolute;
-		top: 1670px;
-		left: 805px;
+		/* position: absolute; */
+		/* top: 1670px; */
+		/* left: 805px; */
 		width: 225px;
 		height: 60px;
 		padding: 6px 20px 6px 5px;
