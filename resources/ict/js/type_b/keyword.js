@@ -35,3 +35,12 @@ $(function () {
 		},
 	});
 });
+
+$(function () {
+	setTimeout(function () {
+		$('#keyword_result').addClass('back');
+	}, 2000);
+	setTimeout(function () {
+		$('.bg_rectangle').addClass('show');
+	}, 2500);
+});

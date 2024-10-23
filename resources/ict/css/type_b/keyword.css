@@ -2,7 +2,6 @@
 	display: block;
 	position: absolute;
 	width: 3180px;
-	overflow: hidden;
 	height: 1630px;
 }
 
@@ -14,15 +13,6 @@
 #landscape_07 {
 	display: block;
 	margin: 0 auto;
-	/* overflow: hidden; */
-}
-
-#landscape_03,
-#landscape_04,
-#landscape_05,
-#landscape_06,
-#landscape_07 {
-	/* overflow: hidden; */
 }
 
 #landscape_02 {
@@ -169,6 +159,7 @@
 	display: flex;
 	flex-direction: column;
 }
+
 .recommendedbooks_wrap .swiper-pagination-bullet {
 	width: 24px;
 	height: 24px;
@@ -254,7 +245,14 @@
 	justify-content: center;
 	gap: 40px !important;
 }
+#landscape_01 .swiper-slide-active {
+	opacity: 1;
+}
 
+#landscape_01 .swiper-slide-next,
+#landscape_01 .swiper-slide-prev {
+	opacity: 0;
+}
 /*02*/
 #landscape_02 .swiper-slide {
 	display: grid !important;
@@ -270,7 +268,10 @@
 #landscape_02 .swiper-slide-active {
 	opacity: 1;
 }
-
+#mn_tab9 .swiper-slide-next,
+#mn_tab9 .swiper-slide-prev,
+#mn_tab10 .swiper-slide-next,
+#mn_tab10 .swiper-slide-prev,
 #mn_tab12 .swiper-slide-next,
 #mn_tab12 .swiper-slide-prev {
 	opacity: 0;
@@ -522,7 +523,8 @@
 	#portrait_07 {
 		display: block;
 		height: 3036px;
-		overflow: hidden;
+		/* overflow: hidden; */
+		margin: 0 auto;
 	}
 	#portrait_02 {
 		height: 2500px;
@@ -548,7 +550,7 @@
 		display: block;
 		position: relative;
 		border-top: 3px solid #191f28;
-		height: 3036px;
+		height: 3300px;
 		width: 1800px;
 		top: 540px;
 		margin: 0 auto;
@@ -585,7 +587,7 @@
 		line-height: 140%;
 		overflow: hidden;
 		width: 100%;
-		max-width: 358px;
+		max-width: 440px;
 		margin-top: 36px;
 		margin-bottom: 8px;
 		white-space: nowrap;
@@ -602,7 +604,7 @@
 		line-height: normal;
 		overflow: hidden;
 		width: 100%;
-		max-width: 358px;
+		max-width: 440px;
 		white-space: nowrap;
 		letter-spacing: -1px;
 		text-transform: capitalize;
@@ -627,10 +629,14 @@
 
 	#portrait_01 .swiper-pagination {
 		position: absolute !important;
-		top: 2946px !important;
+		top: 2800px !important;
 		display: flex !important;
 		justify-content: center;
 		gap: 40px !important;
+		width: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		/* z-index: 9999999999; */
 	}
 	#portrait_02 .swiper-slide {
 		display: grid !important;
@@ -707,11 +713,11 @@
 	#portrait_06 .swiper-slide,
 	#portrait_07 .swiper-slide {
 		display: grid !important;
-		padding: 0 222px;
+		/* padding: 0 222px; */
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(2, auto);
-		grid-row-gap: 80px;
-		grid-column-gap: 163px;
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 120px;
+		grid-column-gap: 100px;
 		justify-items: center;
 	}
 
@@ -720,7 +726,8 @@
 	#portrait_05 .slide-item,
 	#portrait_06 .slide-item,
 	#portrait_07 .slide-item {
-		height: 690px;
+		height: 960px;
+		width: 500px;
 	}
 
 	#portrait_03 .book_title,
@@ -728,14 +735,14 @@
 	#portrait_05 .book_title,
 	#portrait_06 .book_title,
 	#portrait_07 .book_title {
-		font-family: 'Pretendard-Semibold', sans-serif;
-		font-size: 48px;
+		font-family: 'Pretendard-Medium', sans-serif;
+		font-size: 52px;
 		font-weight: 500;
 		font-style: normal;
 		line-height: 140%;
 		overflow: hidden;
 		width: 100%;
-		max-width: 358px;
+		max-width: 500px;
 		margin-top: 36px;
 		margin-bottom: 8px;
 		white-space: nowrap;
@@ -750,13 +757,13 @@
 	#portrait_06 .writer,
 	#portrait_07 .writer {
 		font-family: 'Pretendard-Regular', sans-serif;
-		font-size: 38px;
+		font-size: 42px;
 		font-weight: 400;
 		font-style: normal;
 		line-height: normal;
 		overflow: hidden;
 		width: 100%;
-		max-width: 358px;
+		max-width: 500px;
 		white-space: nowrap;
 		letter-spacing: -1px;
 		text-transform: capitalize;
@@ -780,10 +787,10 @@
 	#portrait_05 .slide-item img,
 	#portrait_06 .slide-item img,
 	#portrait_07 .slide-item img {
-		width: 360px;
-		height: 554px;
-		border-radius: 24px;
-		box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.2);
+		width: 500px;
+		height: 768px;
+		border-radius: 36px;
+		box-shadow: 30px 40px 60px 0px rgba(0, 0, 0, 0.15);
 		object-fit: cover;
 	}
 
@@ -793,15 +800,15 @@
 	#portrait_06 .swiper-pagination,
 	#portrait_07 .swiper-pagination {
 		position: absolute !important;
-		top: 1560px !important;
+		top: 2136px !important;
 		display: flex !important;
 		justify-content: center;
 		gap: 40px !important;
 	}
 	.recommendedbooks_wrap .ttabs {
-		top: 410px;
+		top: 0;
 		width: 100%;
-		position: absolute;
+		/* position: absolute; */
 		z-index: 99999;
 	}
 
@@ -811,8 +818,9 @@
 		display: flex;
 		overflow: hidden;
 		width: 100%;
-		height: 150px;
-		border-radius: 40px;
+		height: 160px;
+		border-radius: 80px;
+		margin-top: 350px;
 	}
 
 	.recommendedbooks_wrap .recom_tab a {
@@ -822,11 +830,11 @@
 		vertical-align: middle;
 		font-size: 50px;
 		color: #fff;
-		line-height: 150px;
+		line-height: 160px;
 		width: 24.6%;
 		position: relative;
 		text-align: center;
-		height: 150px;
+		height: 160px;
 		font-family: 'Pretendard-Bold', sans-serif;
 	}
 
@@ -840,9 +848,9 @@
 	.recommendedbooks_wrap .recom_tab_cont {
 		display: block;
 		position: relative;
-		height: 888px;
-		margin: 200px 0px 0px 0px;
-		width: 100%;
+		height: 2180px;
+		margin: 144px auto 0px;
+		width: 1740px;
 	}
 
 	.recommendedbooks_wrap .tab_contentt {
