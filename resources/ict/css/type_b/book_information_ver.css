@@ -540,84 +540,82 @@
 	background: var(--gray500, #8b95a1);
 }
 @media (max-width: 1080px) {
-	.booksearch_info_wrap {
-		background: url(../../img/type_b/book_information/bg_ver.png) no-repeat center;
+	.detail_wrap {
 		position: relative;
 		overflow: hidden; /* z-index: -99999999; */
-		width: 1080px;
+		width: 100%;
 		height: 1920px;
+		background: url(../../img/type_b/book_information/bg_ver.png) no-repeat center;
+		background-size: cover;
 	}
 
 	.detail_wrap .contents {
-		margin: 45px;
-		padding: 0;
-	}
-	.detail_wrap .detail_bg {
-		width: 1080px;
-		height: 1450px;
+		margin: 237px 0 0;
 	}
 	.bookinfo_thumbnails {
-		top: 108%;
-		left: calc(50% - 500px);
-		overflow: hidden;
+		top: 1320px;
+		left: calc(50% - 439px);
 		width: 1040px;
 		height: 250px;
 	}
+	.bookinfo_thumbnails .slick-current .thum_img {
+		border-width: 1px;
+	}
 	.detail_wrap .thum_info {
-		display: flex;
-		width: 117px !important;
-		height: 222px;
+		width: 118px !important;
+		height: 223px;
 		margin-top: 9px;
 		margin-right: 62px;
 		gap: 14px;
 	}
 	.detail_wrap .bookinfo_main {
 		width: 900px;
-		height: 1030px;
+		height: 1140px;
 	}
 	.detail_wrap .thum_img_wrap {
 		width: 118px;
 		height: 165px;
 	}
-	.bookinfo_thumbnails .slick-current .thum_img {
-		border-width: 1px;
-	}
-
-	.detail_wrap .slick-active .thum_img {
-		-webkit-box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.2);
-		box-shadow: 10px 20px 30px 2px rgba(0, 0, 0, 0.2);
-	}
-
 	.detail_wrap .thum_img {
 		top: calc(50% - 90px);
 		left: calc(50% - 59px);
-		width: 118px;
+		width: 117px;
 		height: 165px;
 		border-radius: 8px;
 	}
+
+	.detail_wrap .slick-active .thum_img {
+		-webkit-box-shadow: 10px 20px 30px 4px rgba(0, 0, 0, 0.2);
+		box-shadow: 10px 20px 30px 4px rgba(0, 0, 0, 0.2);
+	}
+
 	.detail_wrap .info_inner {
 		width: 118px;
 		gap: 4px;
 	}
 	.detail_wrap .book_infotit {
-		padding: 0px 8px 0px 4px;
+		padding: 0 4px;
 	}
 	.detail_wrap .book_infotit_in {
 		font-size: 14px;
+		width: 118px;
 	}
 	.detail_wrap .bookinfo_write {
-		padding: 0px 4px 0px 4px;
+		padding: 0 4px;
 	}
 	.detail_wrap .bookinfo_write_in {
 		font-size: 13px;
+		width: 118px;
 	}
+
 	.detail_wrap .info_bookwrap {
-		height: 1030px;
-		border-radius: 15px;
+		width: 900px;
+		height: 1140px;
+		border-radius: 30px;
 	}
 	.detail_wrap .bookwrap_frame {
 		width: 900px;
-		height: 1030px;
+		height: 1140px;
 	}
 	.detail_wrap .bookimg_ellipse {
 		top: 123px;
@@ -641,16 +639,16 @@
 		height: 90px;
 	}
 	.detail_wrap .left_info {
-		width: 800px;
+		width: 400px;
 	}
 	.detail_wrap .right_info {
-		float: right;
 		width: 43%;
-		height: auto;
 		margin: -303px 0;
 	}
 	.detail_wrap .bookinfo_name {
 		font-size: 36px;
+		font-weight: 600;
+		position: unset;
 		top: 70px;
 		left: 510px;
 		width: 300px;
@@ -684,7 +682,7 @@
 	.detail_wrap .book_mapping {
 		top: 480px;
 		left: 510px;
-		margin: 5px 0;
+		margin: 25px 0;
 	}
 	.detail_wrap .book_mapping {
 		font-size: 20px;
@@ -692,6 +690,7 @@
 		height: 60px;
 		padding: 18px 60px;
 		border-radius: 225px;
+		margin: 5px 0;
 	}
 	.detail_wrap .book_story {
 		font-size: 22px;
@@ -700,11 +699,11 @@
 	}
 	.detail_wrap .book_story_wrap {
 		font-size: 22px;
-		/* bottom: 155px; */
 		left: 70px;
-		top: 695px;
 		width: 780px;
-		height: 260px;
+		height: 345px;
+		padding-right: 13px;
+		top: 695px;
 	}
 	.detail_wrap .book_story_wrap p {
 		font-size: 22px !important;
