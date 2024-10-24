@@ -1,5 +1,5 @@
 svg {
-	overflow: visible; /* 잘리지 않게 설정 */
+	overflow: visible; /* ìž˜ë¦¬ì§€ ì•Šê²Œ ì„¤ì • */
 }
 .popup {
 	display: none;
@@ -118,28 +118,7 @@ body.popup_open .popup {
 	transform: translateX(-50%);
 	overflow: visible;
 }
-.reco_tit_wrap {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 20px;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 100%;
-	left: 50%;
-	top: 70px; /* margin: 50px 0; */
-	position: absolute;
-	transform: translateX(-50%);
-	z-index: 9;
-}
+
 #keyword_zone {
 	position: absolute;
 	top: 348px;
