@@ -159,21 +159,21 @@ function adjustSVGSize() {
         node.selectAll('text').style('font-size', '100px'); // 글씨 크기 조정
     } 
     else if (screenWidth >= 1920) {
-        svg.attr('width', 1590).attr('height', 250)
+        svg.attr('width', 1600).attr('height', 200)
             .style('margin', 'auto')
             .style('display', 'block');
-        simulation.force('center', d3.forceCenter(1700, 300)) // 중앙 정렬
-            .force('x', d3.forceX().strength(0.5).x((d, i) => i * 170 + d.radius)) // 좌우로 퍼짐
-            .force('y', d3.forceY(300).strength(0.1).y(d => Math.max(d.radius, Math.min(300 - d.radius, Math.random() * 300))))
-            .force('collision', d3.forceCollide().radius(d => d.radius * 1.1 + 15)); // 충돌 방지
-        node.selectAll('circle').attr('r', d => d.radius * 1.1);
-        node.selectAll('text').style('font-size', '48px'); // 글씨 크기 조정
+        simulation.force('center', d3.forceCenter(2200, -100)) // 중앙 정렬
+            .force('x', d3.forceX().strength(0.5).x((d, i) => i * 200 + d.radius)) // 좌우로 퍼짐
+            .force('y', d3.forceY(300).strength(0.1).y(d => Math.max(d.radius, Math.min(300 - d.radius, Math.random() * 200))))
+            .force('collision', d3.forceCollide().radius(d => d.radius * 1.3 + 15)); // 충돌 방지
+        node.selectAll('circle').attr('r', d => d.radius * 1.3);
+        node.selectAll('text').style('font-size', '52px'); // 글씨 크기 조정
     } 
     else if (screenWidth <= 1080) {
         svg.attr('width', 870).attr('height', 730)
             .style('margin', 'auto')
             .style('display', 'block');
-        simulation.force('center', d3.forceCenter(1600, 1600)) // 화면 중앙에 고정
+        simulation.force('center', d3.forceCenter(1600, 1500)) // 화면 중앙에 고정
             .force('x', d3.forceX().strength(0.5).x(d => Math.random() * (870 - d.radius * 2) + d.radius)) // 좌우로 퍼짐
             .force('y', d3.forceY().strength(0.5).y(d => Math.max(d.radius, Math.min(730 - d.radius, Math.random() * 730)))) // 세로로 퍼짐, 영역 밖으로 나가지 않게 제한
             .force('collision', d3.forceCollide().radius(d => d.radius * 2.5 + 15)); // 충돌 방지

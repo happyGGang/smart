@@ -174,6 +174,7 @@
 	height: 24px;
 	background-color: #191f28;
 }
+
 #landscape_01 .swiper-slide {
 	display: grid !important;
 	/* padding: 0 330px; */
@@ -246,6 +247,7 @@
 	justify-content: center;
 	gap: 40px !important;
 }
+
 #landscape_01 .swiper-slide-active {
 	opacity: 1;
 }
@@ -254,6 +256,7 @@
 #landscape_01 .swiper-slide-prev {
 	opacity: 0;
 }
+
 /*02*/
 #landscape_02 .swiper-slide {
 	display: grid !important;
@@ -269,6 +272,7 @@
 #landscape_02 .swiper-slide-active {
 	opacity: 1;
 }
+
 #mn_tab9 .swiper-slide-next,
 #mn_tab9 .swiper-slide-prev,
 #mn_tab10 .swiper-slide-next,
@@ -505,6 +509,7 @@
 }
 
 @media (max-width: 2160px) {
+
 	#landscape_01,
 	#landscape_02,
 	#landscape_03,
@@ -527,10 +532,12 @@
 		/* overflow: hidden; */
 		margin: 0 auto;
 	}
+
 	#portrait_02 {
 		height: 2500px;
 		margin-top: 360px;
 	}
+
 	#portrait_02 .swiper-container {
 		height: 2330px;
 	}
@@ -548,6 +555,7 @@
 		position: relative;
 		overflow: hidden;
 	}
+
 	.recommendedbooks_wrap .reco_tab_cont {
 		display: block;
 		position: relative;
@@ -566,6 +574,7 @@
 		top: 420px;
 		width: 1800px;
 	}
+
 	#portrait_01 .swiper-slide {
 		display: grid !important;
 		padding: 0;
@@ -640,6 +649,7 @@
 		transform: translateX(-50%);
 		/* z-index: 9999999999; */
 	}
+
 	#portrait_02 .swiper-slide {
 		display: grid !important;
 		/* padding: 0 222px; */
@@ -670,6 +680,7 @@
 		text-overflow: ellipsis;
 		color: #191f28;
 	}
+
 	#portrait_02 .writer {
 		font-family: 'Pretendard-Medium', sans-serif;
 		font-size: 40px;
@@ -807,6 +818,7 @@
 		justify-content: center;
 		gap: 40px !important;
 	}
+
 	.recommendedbooks_wrap .ttabs {
 		top: 0;
 		width: 100%;
@@ -867,6 +879,7 @@
 		width: 100%;
 	}
 }
+
 @media (max-width: 1920px) {
 	#landscape_01 {
 		display: block;
@@ -930,7 +943,7 @@
 	}
 
 	.recommendedbooks_wrap .reco_tab_cont {
-		border-top: 2px solid #191f28;
+		border-top: 1px solid #191f28;
 		height: 815px;
 		width: 1590px;
 		top: 231px;
@@ -960,6 +973,7 @@
 		height: 535px;
 		width: 1600px;
 	}
+
 	.recommendedbooks_wrap .swiper-pagination-bullet {
 		width: 12px;
 		height: 12px;
@@ -969,6 +983,7 @@
 		width: 12px;
 		height: 12px;
 	}
+
 	#landscape_01 .swiper-slide {
 		grid-template-columns: repeat(7, 1fr);
 		grid-template-rows: repeat(2, auto);
@@ -1173,7 +1188,9 @@
 		width: 100%;
 	}
 }
+
 @media (max-width: 1080px) {
+
 	#landscape_01,
 	#landscape_02,
 	#landscape_03,
@@ -1195,10 +1212,12 @@
 		height: 1518px;
 		margin: 0 auto;
 	}
+
 	#portrait_02 {
 		height: 1250px;
 		margin-top: 180px;
 	}
+
 	#portrait_02 .swiper-container {
 		height: 1165px;
 	}
@@ -1213,6 +1232,7 @@
 		top: 0px;
 		/* filter: blur(2px); */
 	}
+
 	.recommendedbooks_wrap .reco_tab_cont {
 		height: 1650px;
 		width: 900px;
@@ -1228,6 +1248,7 @@
 		top: 210px;
 		width: 900px;
 	}
+
 	#portrait_01 .swiper-slide {
 		display: grid !important;
 		padding: 0;
@@ -1274,6 +1295,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
+
 	#portrait_02 .swiper-slide {
 		display: grid !important;
 		grid-template-columns: repeat(4, 1fr);
@@ -1293,6 +1315,7 @@
 		margin-top: 18px;
 		margin-bottom: 4px;
 	}
+
 	#portrait_02 .writer {
 		font-size: 20px;
 		max-width: 179px;
@@ -1386,6 +1409,7 @@
 		top: 1068px !important;
 		gap: 20px !important;
 	}
+
 	.recommendedbooks_wrap .ttabs {
 		top: 0;
 		width: 100%;
