@@ -118,7 +118,6 @@
 	width: 918px;
 	height: 264px;
 	display: flex;
-	/* justify-content: space-between; */
 	overflow: hidden;
 	z-index: 999999;
 	gap: 30px;
@@ -239,7 +238,7 @@
 	position: absolute;
 	left: 71%;
 	/* top: 1888px; */
-	filter: blur(10px);
+	/* filter: blur(10px); */
 	mix-blend-mode: multiply;
 	object-fit: cover;
 	z-index: -1;
@@ -740,6 +739,11 @@ html {
 	.overflow-y::-webkit-scrollbar-track {
 		background-color: rgba(255, 255, 255, 0.2);
 	}
+
+	.person_wrap {
+		top: 93.2%;
+
+	}
 }
 
 @media (max-width: 1920px) {
@@ -803,7 +807,6 @@ html {
 		width: 1920px;
 		position: absolute;
 		left: 0px;
-		/* bottom: 40px; */
 		top: 980px;
 	}
 
@@ -857,6 +860,91 @@ html {
 
 	.overflow-y::-webkit-scrollbar-thumb {
 		border-radius: 25px;
+	}
+
+	.person_wrap {
+		top: 950px;
+		width: 459px;
+		height: 132px;
+		gap: 15px;
+	}
+
+	.person_said {
+		border-radius: 30px 30px 0px 30px;
+		padding: 25px;
+		width: 300px;
+		height: 90px;
+		box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	.person_said p {
+		font-size: 22px;
+	}
+
+	.person_said a {
+		font-size: 20px;
+	}
+
+
+	@keyframes float {
+		0% {
+			transform: translateY(50px);
+
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateY(0);
+
+			opacity: 1;
+		}
+	}
+
+
+	@keyframes wave {
+		0% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(-5px);
+
+		}
+
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+
+	@keyframes slide {
+		0% {
+			transform: translateX(0);
+		}
+
+		50% {
+			transform: translateX(10px);
+
+		}
+
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+	.person_img {
+		width: 120px;
+	}
+
+	.person_img_front {
+		width: 119px;
+		height: 267px;
+	}
+
+	.person_img_back {
+		width: 119px;
+		height: 267px;
+		left: 71%;
 	}
 }
 
@@ -951,5 +1039,10 @@ html {
 
 	.overflow-y::-webkit-scrollbar-thumb {
 		border-radius: 25px;
+	}
+
+	.person_wrap {
+		top: 93.2%;
+
 	}
 }

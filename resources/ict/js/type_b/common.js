@@ -11,21 +11,21 @@ function adjustPersonWrapLeft() {
         }
     } else if (screenWidth === 2160) {
         if (loginDiv) {
-            personWrap.style.left = '1800px';
+            personWrap.style.left = '33%';
         } else {
-            personWrap.style.left = '1900px';
+            personWrap.style.left = '55%';
         }
     } else if (screenWidth === 1920) {
         if (loginDiv) {
-            personWrap.style.left = '1900px';
+            personWrap.style.left = '1190px';
         } else {
-            personWrap.style.left = '1800px';
+            personWrap.style.left = '1439px';
         }
     } else if (screenWidth === 1080) {
         if (loginDiv) {
-            personWrap.style.left = '800px';
+            personWrap.style.left = '33%';
         } else {
-            personWrap.style.left = '900px';
+            personWrap.style.left = '55%';
         }
     }
 }
