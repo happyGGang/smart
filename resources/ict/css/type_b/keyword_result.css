@@ -15,7 +15,8 @@
 }
 
 #keyword_result {
-	background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%), linear-gradient(to left, #e4e3e5, #e4e3e5);
+	background: url(../../img/type_b/keyword/bg_key_hori_01.png) no-repeat center;
+	background-size: cover;
 	height: 2160px;
 	position: relative;
 	overflow: hidden;
@@ -23,7 +24,8 @@
 }
 #keyword_result.back {
 	animation: changeBackground 2s ease-in-out;
-	background: white;
+	background: url(../../img/type_b/keyword/bg_key_hori_01.png) no-repeat center;
+	background-size: cover;
 }
 
 .bg_rectangle {
@@ -218,7 +220,8 @@
 
 @media (max-width: 2160px) {
 	#keyword_result {
-		background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%);
+		background: url(../../img/type_b/keyword/bg_key_ver_01.png) no-repeat center;
+		background-size: cover;
 		height: 3840px;
 		position: relative;
 		overflow: hidden;
@@ -227,7 +230,8 @@
 
 	#keyword_result.back {
 		animation: changeBackground 2s ease-in-out;
-		background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%);
+		background: url(../../img/type_b/keyword/bg_key_ver_01.png) no-repeat center;
+		background-size: cover;
 	}
 
 	@keyframes changeBackground {
@@ -269,7 +273,6 @@
 	}
 
 	.recommendedbooks_wrap {
-		background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%);
 		width: 2160px;
 		height: 3840px;
 		position: absolute;
@@ -384,7 +387,8 @@
 	}
 
 	#keyword_result {
-		background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%), linear-gradient(to left, #e4e3e5, #e4e3e5);
+		background: url(../../img/type_b/keyword/bg_key_hori_01.png) no-repeat center;
+		background-size: cover;
 		height: 1080px;
 		position: relative;
 		overflow: hidden;
@@ -393,7 +397,8 @@
 	}
 	#keyword_result.back {
 		animation: changeBackground 2s ease-in-out;
-		background: white;
+		background: url(../../img/type_b/keyword/bg_key_hori_01.png) no-repeat center;
+		background-size: cover;
 	}
 
 	.bg_rectangle {
@@ -507,7 +512,8 @@
 }
 @media (max-width: 1080px) {
 	#keyword_result {
-		background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%);
+		background: url(../../img/type_b/keyword/bg_key_ver_01.png) no-repeat center;
+		background-size: cover;
 		height: 1920px;
 		position: relative;
 		overflow: hidden;
@@ -517,7 +523,8 @@
 
 	#keyword_result.back {
 		animation: changeBackground 2s ease-in-out;
-		background: linear-gradient(191.21deg, rgba(161, 231, 250, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(253, 190, 233, 1) 100%);
+		background: url(../../img/type_b/keyword/bg_key_ver_01.png) no-repeat center;
+		background-size: cover;
 	}
 
 	@keyframes changeBackground {
