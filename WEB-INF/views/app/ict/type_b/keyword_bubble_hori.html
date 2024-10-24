@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+		<title>B타입 스마트도서추천</title>
+		<meta content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1" name="viewport" />
+		<link href="../../../../../resources/ict/css/font.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../../resources/ict/css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../../resources/ict/css/type_b/keyword.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../../resources/ict/css/type_b/keyword_bubbl_hori.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../../resources/ict/css/type_b/common.css" rel="stylesheet" type="text/css " />
+		<script src="../../../../../resources/ict/plugin/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script src="../../../../../resources/ict/plugin/d3.min.js" type="text/javascript"></script>
+		<script src="../../../../../resources/ict/plugin/d3-extended.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<link href="../../../../../resources/ict/css/swiper-bundle.min.css" rel="stylesheet" type="text/css " />
+		<script src="../../../../../resources/ict/plugin/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="https://d3js.org/d3.v6.min.js"></script>
+
+		<div class="div_wrap recommendedbooks_wrap info-wrap">
+			<div class="div_wrap_bg"></div>
+			<div class="header">
+				<p>smart recommended books</p>
+				<h1>스마트도서추천</h1>
+			</div>
+			<div class="tabs">
+				<!--탭메뉴-->
+				<div class="reco_tab">
+					<a href="javascript:void(0)" data-tab="mn_tab9" class="active">키워드추천</a>
+					<a href="javascript:void(0)" data-tab="mn_tab10" class="">사서추천</a>
+					<a href="javascript:void(0)" data-tab="mn_tab12" class="">빅데이터추천</a>
+				</div>
+				<div class="reco_tab_cont">
+					<div class="tab_content active" id="mn_tab9">
+						<div class="content">
+							<div class="reco_tit_wrap">
+								<div class="reco_tit">회원님의 관심사는 무엇인가요?</div>
+								<div class="reco_stit">관심 키워드 선택으로 맞춤책을 추천해드려요</div>
+							</div>
+							<div id="keyword_zone">
+								<div id="container" class="svg-container">
+									<script src="../../../../../resources/ict/js/type_b/keyword_bubble_hori.js" type="text/javascript"></script>
+								</div>
+							</div>
+							<div class="key_selec_wrap">
+								<div class="keymenu_frame">
+									<div class="change_word">
+										<a href="#this">
+											<div class="change_word_wrap">
+												<div class="system-uicons-reset">
+													<img class="reset_img" src="../../../../../resources/ict/img/common/reset_btn.svg" />
+												</div>
+												<div class="reset_txt">키워드 바꾸기</div>
+											</div>
+										</a>
+									</div>
+									<div class="selected_word"></div>
+								</div>
+								<div class="select_kind">
+									<div class="reco_select">
+										<div class="reco_select_01">
+											<div class="gender_reco">성별 선택</div>
+											<select name="gender" class="select_reco">
+												<option disabled selected>성별</option>
+												<option value="여자">여자</option>
+												<option value="남자">남자</option>
+											</select>
+										</div>
+										<div class="reco_select_02">
+											<div class="age_reco">나이 선택</div>
+											<select name="age" class="select_age">
+												<option disabled selected>나이</option>
+												<option value="아동">아동</option>
+												<option value="청소년">청소년</option>
+												<option value="20~30대">20~30대</option>
+												<option value="40~50대">40~50대</option>
+												<option value="60대 이상">60대 이상</option>
+											</select>
+										</div>
+									</div>
+									<div class="recomend_btn">
+										<div class="reco_btn_frame">
+											<div class="reco_btn_txt">도서추천받기</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--탭메뉴-->
+					<div class="tab_content" id="mn_tab10">
+						<div class="reco_slide_02 reco_slide">
+							<div class="reco_tit_wrap">
+								<div class="reco_tit">우리 도서관 사서 선생님의 선택</div>
+								<div class="reco_stit">사서 선생님들이 이용자들을 위해 고른 추천도서는 어떠세요?</div>
+							</div>
+							<div class="content" id="landscape_02">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+												<div class="book_title">감정 호텔</div>
+												<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+												<div class="book_title">결국 해내면 그만이다</div>
+												<div class="writer">정영욱<span>/ 놀</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+												<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+												<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+												<div class="book_title">불변의 법칙</div>
+												<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+												<div class="book_title">한 컷 쏙 과학사</div>
+												<div class="writer">문상석<span>/ 풀빛</span></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+												<div class="book_title">브랜드 아틀라스</div>
+												<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+												<div class="book_title">녹나무의 여신</div>
+												<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+												<div class="book_title">마녀들</div>
+												<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+												<div class="book_title">작별하지 않는다</div>
+												<div class="writer">한강<span>/ 창비</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+												<div class="book_title">빛이 이끄는 곳으로</div>
+												<div class="writer">백희성<span>/ 민음사</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+
+							<div class="content" id="portrait_02">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+												<div class="book_title">감정 호텔</div>
+												<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+												<div class="book_title">결국 해내면 그만이다</div>
+												<div class="writer">정영욱<span>/ 놀</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+												<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+												<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+												<div class="book_title">불변의 법칙</div>
+												<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+												<div class="book_title">한 컷 쏙 과학사</div>
+												<div class="writer">문상석<span>/ 풀빛</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_6.png" />
+												<div class="book_title">나는 읽고 쓰고 버린다</div>
+												<div class="writer">손웅정<span>/ 난다</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+												<div class="book_title">브랜드 아틀라스</div>
+												<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+												<div class="book_title">녹나무의 여신</div>
+												<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+												<div class="book_title">마녀들</div>
+												<div class="writer">브랜다 로사노<span> / 양지사</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+												<div class="book_title">브랜드 아틀라스</div>
+												<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+												<div class="book_title">녹나무의 여신</div>
+												<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+												<div class="book_title">마녀들</div>
+												<div class="writer">브랜다 로사노<span> / 양지사</span></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+												<div class="book_title">불변의 법칙</div>
+												<div class="writer">모건 하우절<span>/서삼문</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+												<div class="book_title">한 컷 쏙 과학사</div>
+												<div class="writer">문상석<span>/ 풀빛</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_6.png" />
+												<div class="book_title">나는 읽고 쓰고 버린다</div>
+												<div class="writer">손웅정<span>/ 논다</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+												<div class="book_title">브랜드 아틀라스</div>
+												<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+												<div class="book_title">녹나무의 여신</div>
+												<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+												<div class="book_title">마녀들</div>
+												<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+												<div class="book_title">작별하지 않는다</div>
+												<div class="writer">한강<span>/ 창비</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+												<div class="book_title">빛이 이끄는 곳으로</div>
+												<div class="writer">백희성<span>/ 민음사</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_12.png" />
+												<div class="book_title">이중 하나는 거짓말</div>
+												<div class="writer">김애란<span>/ 문학동네</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+												<div class="book_title">브랜드 아틀라스</div>
+												<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+												<div class="book_title">녹나무의 여신</div>
+												<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+											</div>
+											<div class="slide-item">
+												<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+												<div class="book_title">마녀들</div>
+												<div class="writer">브랜다 로사노<span> / 양지사</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--탭메뉴-->
+					<div class="tab_content" id="mn_tab12">
+						<div class="reco_tit_wrap">
+							<div class="reco_tit">빅데이터는 어떤 책을 추천했을까요?</div>
+							<div class="reco_stit">전국 공공도서관 연령대별 추천도서를 만나보세요</div>
+						</div>
+						<div class="ttabs">
+							<!--탭메뉴-->
+							<div class="recom_tab">
+								<a href="javascript:void(0)" data-tab="m_tab13" class="active">아동</a>
+								<a href="javascript:void(0)" data-tab="m_tab14" class="">청소년</a>
+								<a href="javascript:void(0)" data-tab="m_tab15" class="">20~30대</a>
+								<a href="javascript:void(0)" data-tab="m_tab16" class="">40~50대</a>
+								<a href="javascript:void(0)" data-tab="m_tab17" class="">60대 이상</a>
+							</div>
+							<div class="recom_tab_cont">
+								<div class="tab_contentt active" id="m_tab13">
+									<div class="content" id="landscape_03">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+
+									<div class="content" id="portrait_03">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+								</div>
+								<div class="tab_contentt" id="m_tab14">
+									<div class="content" id="landscape_04">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+
+									<div class="content" id="portrait_04">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+								</div>
+								<div class="tab_contentt" id="m_tab15">
+									<div class="content" id="landscape_05">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+
+									<div class="content" id="portrait_05">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+								</div>
+								<div class="tab_contentt" id="m_tab16">
+									<div class="content" id="landscape_06">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+
+									<div class="content" id="portrait_06">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+								</div>
+								<div class="tab_contentt" id="m_tab17">
+									<div class="content" id="landscape_07">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+
+									<div class="content" id="portrait_07">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_3.png" />
+														<div class="book_title">미래의 나를 만난 후 오늘이 달라졌다</div>
+														<div class="writer">할 허시필드<span>/ 비즈니스북스</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_2.png" />
+														<div class="book_title">결국 해내면 그만이다</div>
+														<div class="writer">정영욱<span>/ 놀</span></div>
+													</div>
+
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_4.png" />
+														<div class="book_title">불변의 법칙</div>
+														<div class="writer">모건 하우절<span>/ 서삼문</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_5.png" />
+														<div class="book_title">한 컷 쏙 과학사</div>
+														<div class="writer">문상석<span>/ 풀빛</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_8.png" />
+														<div class="book_title">녹나무의 여신</div>
+														<div class="writer">히가시노 게이고<span>/ 소미미디어</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_9.png" />
+														<div class="book_title">마녀들</div>
+														<div class="writer">브랜다 로사노<span>/ 양지사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_10.png" />
+														<div class="book_title">작별하지 않는다</div>
+														<div class="writer">한강<span>/ 창비</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_11.png" />
+														<div class="book_title">빛이 이끄는 곳으로</div>
+														<div class="writer">백희성<span>/ 민음사</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_1.png" />
+														<div class="book_title">감정 호텔</div>
+														<div class="writer">리디아 브란코비치<span>/ 책읽는곰</span></div>
+													</div>
+													<div class="slide-item">
+														<img alt="" src="../../../../../resources/ict/img/type_b/keyword/book_7.png" />
+														<div class="book_title">브랜드 아틀라스</div>
+														<div class="writer">리엘리나 휠러, 조엘 카츠<span>/ 시그마북스</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom_fix">
+			<div class="component_leave">
+				<img alt="돌아가기" class="turn_to" src="../../../../../resources/ict/img/common/left_leave.svg" />
+			</div>
+			<div class="user">
+				<div class="login">
+					<img alt="" class="login_women" src="../../../../../resources/ict/img/common/women_login_02.png" />
+					<div class="name_div">
+						<span>
+							<span class="name_span">최고관리자</span>
+							<span class="name_span">님</span>
+						</span>
+					</div>
+					<div class="login_frame">
+						<img alt="로그아웃" class="group" src="../../../../../resources/ict/img/common/logout_arrow.svg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../../../../resources/ict/js/type_b/keyword.js" type="text/javascript"></script>
+		<script></script>
+	</body>
+</html>
