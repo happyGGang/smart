@@ -341,4 +341,13 @@ function dragended(event, d) {
 	d.fy = null;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const svgContainer = document.querySelector('div.svg-container');
+    const personWrap = document.querySelector('.person_wrap'); 
+
+    if (svgContainer && personWrap) {
+        personWrap.style.display = 'none';  
+    }
+});
+
 
