@@ -149,9 +149,12 @@
 	height: 180px;
 	box-shadow: 20px 30px 30px 0px rgba(0, 0, 0, 0.1);
 	flex-direction: column;
-	animation: float 1.5s ease forwards;
+	/*animation: float 1.5s ease forwards;*/
+	will-change: transform, opacity;
 	animation-fill-mode: forwards;
 	align-items: flex-end;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .person_said p {
@@ -163,6 +166,11 @@
 	font-weight: 600;
 	width: 100%;
 	text-align: end;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	will-change: transform;
 }
 
 .person_said a {
@@ -174,12 +182,15 @@
 	font-weight: 600;
 	display: block;
 	width: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .person_said p span {
 	display: inline-block;
-	/*animation: wave 1s ease-in-out infinite;*/
 	animation-delay: calc(var(--index) * 0.1s);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -193,13 +204,11 @@
 	0% {
 		transform: translateY(100px);
 
-		opacity: 0;
 	}
 
 	100% {
 		transform: translateY(0);
 
-		opacity: 1;
 	}
 }
 
