@@ -2,6 +2,10 @@
 	font-family: 'Pretendard-Regular';
 }
 
+.slide-item {
+	cursor: pointer;
+}
+
 /************************************3840px*********************************************/
 ::-webkit-scrollbar-button {
 	display: none;
