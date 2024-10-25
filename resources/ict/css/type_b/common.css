@@ -6,6 +6,15 @@
 	cursor: pointer;
 }
 
+#name_id {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	max-width: 160px;
+	width: auto;
+}
+
 /************************************3840px*********************************************/
 ::-webkit-scrollbar-button {
 	display: none;
@@ -249,7 +258,7 @@
 }
 
 .user {
-	width: 450px;
+	max-width: 450px;
 	height: 120px;
 	position: relative;
 	background: #ffffff;
@@ -272,6 +281,7 @@
 	-webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.1);
 	box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
+	width: auto;
 }
 
 .login {
@@ -290,7 +300,8 @@
 	justify-content: space-between;
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
-	width: 400px;
+	width: auto;
+	max-width: 400px;
 	position: relative;
 }
 
@@ -324,6 +335,11 @@
 	justify-content: center;
 }
 
+.name_wrap {
+	display: flex;
+	align-items: center;
+}
+
 .name_span {
 	color: #191f28;
 	font-family: 'Pretendard-Bold', sans-serif;
@@ -339,6 +355,7 @@
 	height: 41px;
 	position: relative;
 	overflow: hidden;
+	left: 2%;
 }
 
 .group {
@@ -543,7 +560,7 @@ html {
 		-ms-flex-direction: row;
 		flex-direction: row;
 		justify-content: flex-start;
-		width: 450px;
+		max-width: 450px;
 		height: 120px;
 		padding: 12px 40px 12px 10px;
 		border-radius: 200px;
@@ -556,6 +573,7 @@ html {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		-webkit-box-pack: start;
+		width: auto;
 		-ms-flex-pack: start;
 	}
 
@@ -569,12 +587,13 @@ html {
 		flex-direction: row;
 		flex-shrink: 0;
 		justify-content: space-between;
-		width: 400px;
+		max-width: 400px;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		-webkit-box-pack: justify;
+		width: auto;
 		-ms-flex-pack: justify;
 		-ms-flex-negative: 0;
 	}
@@ -752,6 +771,11 @@ html {
 
 @media (max-width: 1920px) {
 
+	#name_id {
+		max-width: 80px;
+		width: auto;
+	}
+
 	/**********************************************common**********************************************/
 	body {
 		font-size: 16px;
@@ -821,7 +845,8 @@ html {
 	}
 
 	.user {
-		width: 225px;
+		max-width: 225px;
+		width: auto;
 		height: 60px;
 		border-radius: 100px;
 		padding: 6px 20px 6px 5px;
@@ -831,7 +856,8 @@ html {
 	}
 
 	.login {
-		width: 200px;
+		max-width: 200px;
+		width: auto;
 	}
 
 	.login_women {
@@ -981,7 +1007,8 @@ html {
 	}
 
 	.user {
-		width: 225px;
+		max-width: 225px;
+		width: auto;
 		height: 60px;
 		padding: 6px 20px 6px 5px;
 		border-radius: 100px;
@@ -991,7 +1018,8 @@ html {
 	}
 
 	.login {
-		width: 200px;
+		max-width: 200px;
+		width: auto;
 	}
 
 	.login_women {

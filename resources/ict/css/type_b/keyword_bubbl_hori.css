@@ -709,7 +709,7 @@ g text {
 		position: relative;
 		width: 290px;
 		height: 150px;
-		background: url('../../img/common/keyboard_arrow_down.svg') calc(100% - 5px) center no-repeat;
+		background: url('../../img/common/keyboard_arrow_down.svg') calc(100% - -9px) center no-repeat;
 		background-size: 96px;
 		padding: 5px 30px 5px 10px;
 		border-radius: 4px;
