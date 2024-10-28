@@ -25,11 +25,19 @@
 	overflow: hidden;
 	transition: all 0.5s ease;
 	transform: translateY(100%);
+	z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999;
 }
 
 .bg_rectangle.show {
 	transform: translateY(0);
 	z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+.bg_rectangle.hide {
+	transform: translateY(0);
+	z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999;
+	transition: all 0.5s ease;
+	transform: translateY(100%);
 }
 
 #keyword_result .reco_tab_cont {

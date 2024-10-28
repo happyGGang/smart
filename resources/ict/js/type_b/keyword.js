@@ -40,3 +40,9 @@ $(function () {
         $('.bg_rectangle').addClass('show'); // show 클래스 추가
     });
 });
+
+$(function () {
+    $('#keyword_result .component_leave').on('click', function (event) {
+		$('.bg_rectangle').removeClass('show');
+    });
+});

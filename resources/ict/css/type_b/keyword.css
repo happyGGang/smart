@@ -242,7 +242,7 @@
 
 #landscape_01 .swiper-pagination {
 	position: absolute !important;
-	top: 1400px !important;
+	top: 1401px !important;
 	display: flex !important;
 	justify-content: center;
 	gap: 28px !important;
@@ -340,7 +340,7 @@
 	top: 1400px !important;
 	display: flex !important;
 	justify-content: center;
-	gap: 40px !important;
+	gap: 28px !important;
 }
 
 /*03*/
@@ -441,7 +441,7 @@
 	top: 870px !important;
 	display: flex !important;
 	justify-content: center;
-	gap: 40px !important;
+	gap: 28px !important;
 }
 
 .recommendedbooks_wrap .ttabs {
@@ -819,7 +819,7 @@
 		top: 2136px !important;
 		display: flex !important;
 		justify-content: center;
-		gap: 40px !important;
+		gap: 28px !important;
 	}
 
 	.recommendedbooks_wrap .ttabs {
@@ -1027,7 +1027,7 @@
 	}
 
 	#landscape_01 .swiper-pagination {
-		top: 700px !important;
+		top: 702px !important;
 		gap: 14px !important;
 	}
 
@@ -1070,7 +1070,7 @@
 
 	#landscape_02 .swiper-pagination {
 		top: 700px !important;
-		gap: 20px !important;
+		gap: 14px !important;
 	}
 
 	/*03*/
@@ -1141,7 +1141,7 @@
 	#landscape_06 .swiper-pagination,
 	#landscape_07 .swiper-pagination {
 		top: 437px !important;
-		gap: 20px !important;
+		gap: 14px !important;
 	}
 
 	.recommendedbooks_wrap .ttabs {
@@ -1410,7 +1410,7 @@
 	#portrait_06 .swiper-pagination,
 	#portrait_07 .swiper-pagination {
 		top: 1068px !important;
-		gap: 20px !important;
+		gap: 14px !important;
 	}
 
 	.recommendedbooks_wrap .ttabs {

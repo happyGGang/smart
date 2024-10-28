@@ -151,7 +151,7 @@ function adjustSVGSize() {
         svg.attr('width', 1740).attr('height', 1460)
             .style('margin', 'auto')
             .style('display', 'block');
-        simulation.force('center', d3.forceCenter(1600, 1200)) // 화면 중앙에 고정
+        simulation.force('center', d3.forceCenter(1600, 1100)) // 화면 중앙에 고정
             .force('x', d3.forceX().strength(0.5).x(d => Math.random() * (1740 - d.radius * 2) + d.radius)) // 좌우로 퍼짐
             .force('y', d3.forceY().strength(0.5).y(d => Math.max(d.radius, Math.min(1400 - d.radius, Math.random() * 1400)))) // 세로로 퍼짐, 영역 밖으로 나가지 않게 제한
             .force('collision', d3.forceCollide().radius(d => d.radius * 2.5 + 20)); // 충돌 방지
@@ -173,7 +173,7 @@ function adjustSVGSize() {
         svg.attr('width', 870).attr('height', 730)
             .style('margin', 'auto')
             .style('display', 'block');
-        simulation.force('center', d3.forceCenter(1600, 1500)) // 화면 중앙에 고정
+        simulation.force('center', d3.forceCenter(1600, 1400)) // 화면 중앙에 고정
             .force('x', d3.forceX().strength(0.5).x(d => Math.random() * (870 - d.radius * 2) + d.radius)) // 좌우로 퍼짐
             .force('y', d3.forceY().strength(0.5).y(d => Math.max(d.radius, Math.min(730 - d.radius, Math.random() * 730)))) // 세로로 퍼짐, 영역 밖으로 나가지 않게 제한
             .force('collision', d3.forceCollide().radius(d => d.radius * 2.5 + 15)); // 충돌 방지
