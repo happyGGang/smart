@@ -209,6 +209,7 @@ body.popup_open .popup {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 6px 0;
 }
 
 .reset_img {
@@ -592,17 +593,18 @@ g text {
 	}
 
 	.key_selec_wrap {
-		gap: 40px;
-		top: 1920px;
+		gap: 80px;
+		top: 1940px;
 	}
 
 	.select_kind {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 60px;
 	}
 
 	.keymenu_frame {
-		gap: 25px;
+		gap: 80px;
 	}
 
 	.change_word {
@@ -626,6 +628,7 @@ g text {
 		left: 466.12px;
 		top: 8px;
 		overflow: hidden;
+		margin: 6px 0;
 	}
 
 	.reset_img {
@@ -941,6 +944,7 @@ g text {
 	.system-uicons-reset {
 		width: 38px;
 		height: 38px;
+		margin: 3px 0;
 	}
 
 	.reset_img {
@@ -1094,17 +1098,18 @@ g text {
 	}
 
 	.key_selec_wrap {
-		gap: 20px;
-		top: 960px;
+		gap: 40px;
+		top: 970px;
 		width: 900px;
 	}
 
 	.keymenu_frame {
-		gap: 12px;
+		gap: 40px;
 	}
 
 	.select_kind {
 		flex-wrap: wrap;
+		gap: 30px;
 	}
 
 
@@ -1118,6 +1123,7 @@ g text {
 		height: 37px;
 		left: 233px;
 		top: 8px;
+		margin: 3px 0;
 	}
 
 	.reset_img {

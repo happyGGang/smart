@@ -18,19 +18,19 @@
 /************************************3840px*********************************************/
 ::-webkit-scrollbar-button {
 	display: none;
-	/* 스크롤 버튼 숨기기 */
+	/* ìŠ¤í¬ë¡¤ ë²„íŠ¼ ìˆ¨ê¸°ê¸° */
 }
 
 ::-webkit-scrollbar {
 	width: 4px;
-	/* 세로 스크롤 너비 */
+	/* ì„¸ë¡œ ìŠ¤í¬ë¡¤ ë„ˆë¹„ */
 }
 
 ::-webkit-scrollbar-track {
 	background: #d9d9d9;
 	border-radius: 4px;
 	width: 4px;
-	/* 트랙 배경 */
+	/* íŠ¸ëž™ ë°°ê²½ */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -92,6 +92,18 @@
 	top: 1960px;
 }
 
+#keyword_result .bottom_fix {
+	padding: 0px 100px 0px 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 3840px;
+	position: absolute;
+	left: 0px;
+	top: 1626px;
+}
+
 .component_leave {
 	width: 210px;
 	height: 96px;
@@ -147,7 +159,7 @@
 	justify-content: center;
 	width: 600px;
 	height: 180px;
-	box-shadow: 20px 30px 30px 0px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 20px 30px 30px 0px rgba(0, 0, 0, 0.1); */
 	flex-direction: column;
 	/*animation: float 1.5s ease forwards;*/
 	will-change: transform, opacity;
@@ -258,9 +270,9 @@
 	width: 238px;
 	height: 534px;
 	position: absolute;
-	left: 71%;
+	left: 70%;
 	/* top: 1888px; */
-	/* filter: blur(10px); */
+	filter: blur(20px);
 	mix-blend-mode: multiply;
 	object-fit: cover;
 	z-index: -1;
@@ -543,8 +555,20 @@ html {
 		top: 3640px;
 	}
 
+	#keyword_result .bottom_fix {
+		padding: 0px 100px 0px 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 2160px;
+		position: absolute;
+		left: 0px;
+		top: 3240px;
+	}
+
 	.component_leave {
-		left: 100px;
+		/* left: 100px; */
 		width: 210px;
 		height: 96px;
 	}
@@ -846,6 +870,14 @@ html {
 		top: 980px;
 	}
 
+	#keyword_result .bottom_fix {
+		padding: 0px 50px 0px 50px;
+		width: 1920px;
+		position: absolute;
+		left: 0px;
+		top: 813px;
+	}
+
 	.component_leave {
 		width: 105px;
 		height: 48px;
@@ -912,7 +944,7 @@ html {
 		padding: 25px;
 		width: 300px;
 		height: 90px;
-		box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.1);
+		/* box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.1); */
 	}
 
 	.person_said p {
@@ -1008,6 +1040,15 @@ html {
 		bottom: 40px;
 		top: 1820px;
 	}
+
+	#keyword_result .bottom_fix {
+		padding: 0px 50px 0px 50px;
+		width: 1080px;
+		bottom: 40px;
+		top: 1620px;
+	}
+
+
 
 	.component_leave {
 		width: 105px;

@@ -35,10 +35,8 @@ $(function () {
 });
 
 $(function () {
-	setTimeout(function () {
-		$('#keyword_result').addClass('back');
-	}, 2000);
-	setTimeout(function () {
-		$('.bg_rectangle').addClass('show');
-	}, 2500);
+    $('.person_said a').on('click', function (event) {
+        event.preventDefault(); // a 태그의 기본 동작 방지
+        $('.bg_rectangle').addClass('show'); // show 클래스 추가
+    });
 });

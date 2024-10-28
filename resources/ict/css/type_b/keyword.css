@@ -48,7 +48,7 @@
 	width: 3220px;
 	height: auto;
 	position: absolute;
-	z-index: 99999999999;
+	z-index: 999999999;
 	transform: translateX(-50%);
 }
 
@@ -478,7 +478,7 @@
 	position: relative;
 	text-align: center;
 	height: 160px;
-	font-family: 'Pretendard-Bold', sans-serif;
+	font-family: 'Pretendard-SemiBold', sans-serif;
 }
 
 .recommendedbooks_wrap .recom_tab a.active {
@@ -583,8 +583,8 @@
 		padding: 0;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, auto);
-		grid-row-gap: 100px;
-		grid-column-gap: 180px;
+		grid-row-gap: 90px;
+		grid-column-gap: 88px;
 		justify-items: center;
 	}
 
@@ -646,7 +646,7 @@
 		top: 2800px !important;
 		display: flex !important;
 		justify-content: center;
-		gap: 40px !important;
+		gap: 28px !important;
 		width: 50%;
 		left: 50%;
 		transform: translateX(-50%);
@@ -658,7 +658,7 @@
 		/* padding: 0 222px; */
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(3, auto);
-		grid-row-gap: 110px;
+		grid-row-gap: 88px;
 		grid-column-gap: 100px;
 		justify-items: center;
 	}
@@ -720,7 +720,7 @@
 		top: 2778px !important;
 		display: flex !important;
 		justify-content: center;
-		gap: 40px !important;
+		gap: 28px !important;
 	}
 
 	#portrait_03 .swiper-slide,
@@ -852,7 +852,7 @@
 		position: relative;
 		text-align: center;
 		height: 160px;
-		font-family: 'Pretendard-Bold', sans-serif;
+		font-family: 'Pretendard-SemiBold', sans-serif;
 	}
 
 	.recommendedbooks_wrap .recom_tab a.active {
@@ -1257,8 +1257,8 @@
 		padding: 0;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, auto);
-		grid-row-gap: 50px;
-		grid-column-gap: 90px;
+		grid-row-gap: 45px;
+		grid-column-gap: 44px;
 		justify-items: center;
 	}
 
@@ -1293,7 +1293,7 @@
 
 	#portrait_01 .swiper-pagination {
 		top: 1400px !important;
-		gap: 20px !important;
+		gap: 14px !important;
 		width: 50%;
 		left: 50%;
 		transform: translateX(-50%);
@@ -1303,7 +1303,7 @@
 		display: grid !important;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(3, auto);
-		grid-row-gap: 55px;
+		grid-row-gap: 44px;
 		grid-column-gap: 50px;
 		justify-items: center;
 	}
@@ -1338,7 +1338,7 @@
 
 	#portrait_02 .swiper-pagination {
 		top: 1389px !important;
-		gap: 20px !important;
+		gap: 14px !important;
 	}
 
 	#portrait_03 .swiper-slide,
