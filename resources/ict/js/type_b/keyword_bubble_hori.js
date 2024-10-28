@@ -137,15 +137,15 @@ function adjustSVGSize() {
     const screenWidth = window.innerWidth;
 
     if (screenWidth >= 3840) {
-        svg.attr('width', 3180).attr('height', 350)
+        svg.attr('width', 3300).attr('height', 300)
             .style('margin', 'auto')
             .style('display', 'block');
-        simulation.force('center', d3.forceCenter(2600, 400)) // 중앙 정렬
-            .force('x', d3.forceX().strength(0.5).x((d, i) => i * 280 + d.radius)) // 좌우로 퍼짐
+        simulation.force('center', d3.forceCenter(3200, 400)) // 중앙 정렬
+            .force('x', d3.forceX().strength(0.5).x((d, i) => i * 400 + d.radius)) // 좌우로 퍼짐
             .force('y', d3.forceY(300).strength(0.1).y(d => Math.max(d.radius, Math.min(100 - d.radius, Math.random() *90))))
-            .force('collision', d3.forceCollide().radius(d => d.radius * 1.7 + 20)); // 충돌 방지
-        node.selectAll('circle').attr('r', d => d.radius * 1.7);
-        node.selectAll('text').style('font-size', '70px');
+            .force('collision', d3.forceCollide().radius(d => d.radius * 1.8 + 20)); // 충돌 방지
+        node.selectAll('circle').attr('r', d => d.radius * 1.8);
+        node.selectAll('text').style('font-size', '80px');
     } 
     else if (screenWidth >= 2160) {
         svg.attr('width', 1740).attr('height', 1460)
@@ -162,11 +162,11 @@ function adjustSVGSize() {
         svg.attr('width', 1600).attr('height', 200)
             .style('margin', 'auto')
             .style('display', 'block');
-        simulation.force('center', d3.forceCenter(2200, -100)) // 중앙 정렬
-            .force('x', d3.forceX().strength(0.5).x((d, i) => i * 200 + d.radius)) // 좌우로 퍼짐
+        simulation.force('center', d3.forceCenter(2400, -100)) // 중앙 정렬
+            .force('x', d3.forceX().strength(0.5).x((d, i) => i * 270 + d.radius)) // 좌우로 퍼짐
             .force('y', d3.forceY(300).strength(0.1).y(d => Math.max(d.radius, Math.min(300 - d.radius, Math.random() * 200))))
-            .force('collision', d3.forceCollide().radius(d => d.radius * 1.3 + 15)); // 충돌 방지
-        node.selectAll('circle').attr('r', d => d.radius * 1.3);
+            .force('collision', d3.forceCollide().radius(d => d.radius * 1.4 + 15)); // 충돌 방지
+        node.selectAll('circle').attr('r', d => d.radius * 1.4);
         node.selectAll('text').style('font-size', '52px'); // 글씨 크기 조정
     } 
     else if (screenWidth <= 1080) {

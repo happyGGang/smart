@@ -22,6 +22,7 @@
 	overflow: hidden;
 	animation: changeBackground 2s ease-in-out;
 }
+
 #keyword_result.back {
 	animation: changeBackground 2s ease-in-out;
 	background: url(../../img/type_b/keyword/bg_key_hori_01.png) no-repeat center;
@@ -40,6 +41,7 @@
 	transition: all 0.5s ease;
 	transform: translateY(100%);
 }
+
 .bg_rectangle.show {
 	transform: translateY(0);
 }
@@ -138,6 +140,7 @@
 	height: 24px;
 	background-color: #191f28;
 }
+
 #mn_tab9 .swiper-slide-next,
 #mn_tab9 .swiper-slide-prev,
 #mn_tab10 .swiper-slide-next,
@@ -159,7 +162,7 @@
 }
 
 #landscape_03 .slide-item {
-	height: 810px;
+	height: 820px;
 }
 
 #landscape_03 .book_title {
@@ -171,7 +174,7 @@
 	overflow: hidden;
 	width: 100%;
 	max-width: 434px;
-	margin-top: 36px;
+	margin-top: 52px;
 	margin-bottom: 16px;
 	white-space: nowrap;
 	letter-spacing: -1.2px;
@@ -235,8 +238,7 @@
 	}
 
 	@keyframes changeBackground {
-		to {
-		}
+		to {}
 	}
 
 	.bg_rectangle {
@@ -251,6 +253,7 @@
 		transition: all 0.5s ease;
 		transform: translateY(100%);
 	}
+
 	.bg_rectangle.show {
 		transform: translateY(0);
 	}
@@ -264,10 +267,12 @@
 		height: 3036px;
 		margin: 0 auto;
 	}
+
 	#portrait_02 {
 		height: 2500px;
 		margin-top: 360px;
 	}
+
 	#portrait_02 .swiper-container {
 		height: 2330px;
 	}
@@ -283,6 +288,7 @@
 		position: relative;
 		overflow: hidden;
 	}
+
 	.recommendedbooks_wrap .reco_tab_cont {
 		display: block;
 		position: relative;
@@ -332,6 +338,7 @@
 		text-overflow: ellipsis;
 		color: #191f28;
 	}
+
 	#portrait_02 .writer {
 		font-family: 'Pretendard-Medium', sans-serif;
 		font-size: 40px;
@@ -371,6 +378,7 @@
 		gap: 40px !important;
 	}
 }
+
 @media (max-width: 1920px) {
 	#landscape_01 {
 		width: 1590px;
@@ -395,6 +403,7 @@
 		animation: changeBackground 2s ease-in-out;
 		width: 1920px;
 	}
+
 	#keyword_result.back {
 		animation: changeBackground 2s ease-in-out;
 		background: url(../../img/type_b/keyword/bg_key_hori_01.png) no-repeat center;
@@ -413,6 +422,7 @@
 		transition: all 0.5s ease;
 		transform: translateY(100%);
 	}
+
 	.bg_rectangle.show {
 		transform: translateY(0);
 	}
@@ -469,6 +479,7 @@
 		width: 12px;
 		height: 12px;
 	}
+
 	/*03*/
 	#landscape_03 .swiper-slide {
 		display: grid !important;
@@ -478,13 +489,13 @@
 	}
 
 	#landscape_03 .slide-item {
-		height: 405px;
+		height: 410px;
 	}
 
 	#landscape_03 .book_title {
 		font-size: 24px;
 		max-width: 217px;
-		margin-top: 18px;
+		margin-top: 26px;
 		margin-bottom: 8px;
 	}
 
@@ -510,6 +521,7 @@
 		gap: 20px !important;
 	}
 }
+
 @media (max-width: 1080px) {
 	#keyword_result {
 		background: url(../../img/type_b/keyword/bg_key_ver_01.png) no-repeat center;
@@ -528,8 +540,7 @@
 	}
 
 	@keyframes changeBackground {
-		to {
-		}
+		to {}
 	}
 
 	.bg_rectangle {
@@ -544,6 +555,7 @@
 		transition: all 0.5s ease;
 		transform: translateY(100%);
 	}
+
 	.bg_rectangle.show {
 		transform: translateY(0);
 	}
@@ -557,10 +569,12 @@
 		height: 1518px;
 		margin: 0 auto;
 	}
+
 	#portrait_02 {
 		height: 1250px;
 		margin-top: 180px;
 	}
+
 	#portrait_02 .swiper-container {
 		height: 1165px;
 	}
@@ -577,6 +591,7 @@
 		position: relative;
 		overflow: hidden;
 	}
+
 	.recommendedbooks_wrap .reco_tab_cont {
 		border-top: 0;
 		height: 1650px;
@@ -613,6 +628,7 @@
 		margin-top: 18px;
 		margin-bottom: 4px;
 	}
+
 	#portrait_02 .writer {
 		font-size: 20px;
 		max-width: 179px;

@@ -127,7 +127,7 @@
 
 .person_wrap {
 	position: absolute;
-	top: 1900px;
+	top: 84%;
 	width: 918px;
 	height: 264px;
 	display: flex;
@@ -773,8 +773,7 @@ html {
 	}
 
 	.person_wrap {
-		top: 93.2%;
-
+		top: 87.8%;
 	}
 }
 
@@ -902,7 +901,7 @@ html {
 	}
 
 	.person_wrap {
-		top: 950px;
+		top: 84%;
 		width: 459px;
 		height: 132px;
 		gap: 15px;
@@ -1083,7 +1082,6 @@ html {
 	}
 
 	.person_wrap {
-		top: 93.2%;
-
+		top: 87.8%;
 	}
 }

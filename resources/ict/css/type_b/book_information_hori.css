@@ -51,9 +51,11 @@
 	overflow-y: hidden;
 	z-index: 999999;
 }
+
 .detail_wrap .bookinfo_thumbnails .slick-list {
 	overflow: visible;
 }
+
 .detail_wrap .thum_info {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -77,6 +79,7 @@
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
+
 .detail_wrap .thum_img_wrap {
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
@@ -84,11 +87,13 @@
 	height: 330px;
 	position: static;
 }
+
 .detail_wrap .slick-current .thum_img {
 	border-style: solid;
 	border-color: #242424;
 	border-width: 2px;
 }
+
 .detail_wrap .thum_img {
 	border-width: 2px;
 	width: 234px;
@@ -102,6 +107,7 @@
 	object-fit: cover;
 	border-radius: 16px;
 }
+
 .detail_wrap .info_inner {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -122,6 +128,7 @@
 	width: 236px;
 	position: relative;
 }
+
 .detail_wrap .book_infotit {
 	padding: 10px 8px 0 8px;
 	display: -webkit-box;
@@ -145,6 +152,7 @@
 	overflow: hidden;
 	/* gap: 6px; */
 }
+
 .detail_wrap .book_infotit_in {
 	color: #191f28;
 	text-align: left;
@@ -163,6 +171,7 @@
 	white-space: nowrap;
 	display: inline-block;
 }
+
 .detail_wrap .bookinfo_write {
 	padding: 0px 7.83px 0px 7.83px;
 	display: -webkit-box;
@@ -185,6 +194,7 @@
 	position: relative;
 	overflow: hidden;
 }
+
 .detail_wrap .bookinfo_write_in {
 	color: #4e5968;
 	text-align: left;
@@ -239,11 +249,13 @@
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
+
 .detail_wrap .bookwrap_frame {
 	width: 2886px;
 	height: 1400px;
 	position: relative;
 }
+
 .detail_wrap .bookimg_ellipse {
 	background: #eeeeee;
 	border-radius: 50%;
@@ -253,6 +265,7 @@
 	left: 160px;
 	top: calc(50% - 400px);
 }
+
 .detail_wrap .book_mainimg {
 	width: 620px;
 	height: 950px;
@@ -290,12 +303,15 @@
 	z-index: 99999;
 	line-height: normal;
 }
+
 .detail_wrap .left_info {
 	width: 800px;
 }
+
 .detail_wrap .right_info {
 	height: auto;
 }
+
 .detail_wrap .bookinfo_name {
 	color: #191f28;
 	text-align: left;
@@ -320,6 +336,7 @@
 	width: 1470px;
 	letter-spacing: -0.02em;
 }
+
 .detail_wrap .bookinfo_sort {
 	color: #6b7684;
 	text-align: left;
@@ -339,6 +356,7 @@
 	-ms-flex-pack: start;
 	justify-content: flex-start;
 }
+
 .detail_wrap .detain_bookinfo {
 	display: inline-block;
 	left: 1120px;
@@ -347,9 +365,11 @@
 	width: 100%;
 	width: 1560px;
 }
+
 .detail_wrap .detain_bookinfo_inner {
 	float: left;
 }
+
 .detail_wrap .info_div {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -359,6 +379,7 @@
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
+
 .detail_wrap .info_div span {
 	text-align: left;
 	font-family: 'Pretendard-SemiBold', sans-serif;
@@ -367,6 +388,7 @@
 	font-weight: 600;
 	width: 200px;
 }
+
 .detail_wrap .info_div p {
 	color: #6b7684;
 	text-align: left;
@@ -375,6 +397,7 @@
 	line-height: 180%;
 	font-weight: 400;
 }
+
 .detail_wrap .book_mapping {
 	position: unset;
 	left: 2146px;
@@ -406,6 +429,7 @@
 	font-size: 40px;
 	justify-content: center;
 }
+
 .detail_wrap .book_map {
 	background: #242424;
 	border-radius: 500px;
@@ -428,6 +452,7 @@
 	overflow: hidden;
 	width: 480px;
 }
+
 .detail_wrap .book_map_txt {
 	color: #ffffff;
 	text-align: left;
@@ -445,6 +470,7 @@
 	-ms-flex-pack: start;
 	justify-content: flex-start;
 }
+
 .detail_wrap .book_story {
 	color: #191f28;
 	text-align: left;
@@ -456,6 +482,7 @@
 	left: 1120px;
 	top: 814px;
 }
+
 .detail_wrap .book_story_wrap {
 	color: #191f28;
 	text-align: left;
@@ -465,7 +492,7 @@
 	font-weight: 400;
 	position: absolute;
 	left: 1120px;
-	top: 905px;
+	top: 880px;
 	width: 1560px;
 	height: 347px;
 	text-overflow: ellipsis;
@@ -474,17 +501,21 @@
 	padding-right: 25px;
 	text-align: justify;
 }
+
 .detail_wrap .book_story_wrap p {
 	font-family: 'Pretendard-Regular', sans-serif !important;
 	font-size: 44px !important;
 }
+
 .detail_wrap .book_story_wrap p span {
 	font-family: 'Pretendard-Regular', sans-serif !important;
 	font-size: 44px !important;
 }
+
 .detail_wrap .bookinfo_thumbnails .slick-slider {
 	position: absolute;
 }
+
 .popup-overlay {
 	position: fixed;
 	top: 0;
@@ -503,6 +534,7 @@
 	align-items: center;
 	z-index: 9999999;
 }
+
 .popup-content {
 	background-color: white;
 	border-radius: 60px;
@@ -514,9 +546,11 @@
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .popup-wrapper {
 	padding: 108px 90px 54px 90px;
 }
+
 .popup-title {
 	margin-bottom: 39px;
 	text-align: center;
@@ -526,10 +560,12 @@
 	line-height: normal;
 	color: #242424;
 }
+
 .map {
 	width: 1620px;
 	height: 980px;
 }
+
 .action_btn {
 	width: 100%;
 	position: relative;
@@ -541,6 +577,7 @@
 	justify-content: space-between;
 	border-top: 1px solid #a2a2a2;
 }
+
 .action_btn::after {
 	content: '';
 	position: absolute;
@@ -552,6 +589,7 @@
 	height: 70px;
 	background-color: #a2a2a2;
 }
+
 .close_btn,
 .print_btn {
 	display: -webkit-box;
@@ -568,6 +606,7 @@
 	cursor: pointer;
 	padding: 60px;
 }
+
 .close_btn div,
 .print_btn div {
 	font-size: 60px;
@@ -576,6 +615,7 @@
 	line-height: normal;
 	color: #242424;
 }
+
 .close_btn img {
 	width: 45px;
 	height: 45px;
@@ -585,13 +625,16 @@
 	width: 55px;
 	height: 68px;
 }
+
 .detail_wrap .scroll {
 	overflow-y: scroll;
 }
+
 #bookSearchResultTitle {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap; /* width: 650px; */
+	white-space: nowrap;
+	/* width: 650px; */
 	max-width: 1300px;
 	line-height: 36px;
 }
@@ -624,6 +667,7 @@
 		top: 90px;
 		height: 1020px;
 	}
+
 	.detail_wrap .thum_info {
 		gap: 14px;
 		width: 117px !important;
@@ -631,13 +675,16 @@
 		margin-bottom: 15px;
 		margin-top: 15px;
 	}
+
 	.detail_wrap .thum_img_wrap {
 		width: 118px;
 		height: 165px;
 	}
+
 	.detail_wrap .slick-current .thum_img {
 		border-width: 1px;
 	}
+
 	.detail_wrap .thum_img {
 		border-width: 1px;
 		width: 117px;
@@ -648,20 +695,25 @@
 		box-shadow: 10px 10px 20px 0px rgb(0 0 0 / 18%);
 		border-radius: 8px;
 	}
+
 	.detail_wrap .info_inner {
 		gap: 3px;
 		width: 118px;
 	}
+
 	.detail_wrap .book_infotit {
 		padding: 5px 48px 0 4px;
 	}
+
 	.detail_wrap .book_infotit_in {
 		font-size: 14px;
 		width: 118px;
 	}
+
 	.detail_wrap .bookinfo_write {
 		padding: 0px 4px 0px 4px;
 	}
+
 	.detail_wrap .bookinfo_write_in {
 		font-size: 13px;
 		width: 119px;
@@ -687,16 +739,19 @@
 		width: 1443px;
 		height: 700px;
 	}
+
 	.detail_wrap .bookwrap_frame {
 		width: 1443px;
 		height: 700px;
 	}
+
 	.detail_wrap .bookimg_ellipse {
 		width: 400px;
 		height: 400px;
 		left: 80px;
 		top: calc(50% - 200px);
 	}
+
 	.detail_wrap .book_mainimg {
 		width: 310px;
 		height: 475px;
@@ -713,6 +768,7 @@
 		top: 92px;
 		font-size: 20px;
 	}
+
 	.detail_wrap .left_info {
 		width: 200px;
 	}
@@ -723,23 +779,28 @@
 		top: 90px;
 		width: 735px;
 	}
+
 	.detail_wrap .bookinfo_sort {
 		font-size: 22px;
 		left: 560px;
 		top: 150px;
 	}
+
 	.detail_wrap .detain_bookinfo {
 		left: 560px;
 		top: 205px;
 		width: 780px;
 	}
+
 	.detail_wrap .info_div span {
 		font-size: 20px;
 		width: 100px;
 	}
+
 	.detail_wrap .info_div p {
 		font-size: 20px;
 	}
+
 	.detail_wrap .book_mapping {
 		left: 1073px;
 		top: 307px;
@@ -750,31 +811,37 @@
 		width: 240px;
 		font-size: 20px;
 	}
+
 	.detail_wrap .book_map {
 		border-radius: 250px;
 		padding: 18px 60px;
 		height: 60px;
 		width: 240px;
 	}
+
 	.detail_wrap .book_map_txt {
 		font-size: 20px;
 	}
+
 	.detail_wrap .book_story {
 		font-size: 22px;
 		left: 560px;
 		top: 407px;
 	}
+
 	.detail_wrap .book_story_wrap {
 		font-size: 22px;
 		left: 560px;
-		top: 452px;
+		top: 440px;
 		width: 780px;
 		height: 174px;
 		padding-right: 13px;
 	}
+
 	.detail_wrap .book_story_wrap p {
 		font-size: 22px !important;
 	}
+
 	.detail_wrap .book_story_wrap p span {
 		font-size: 22px !important;
 	}
@@ -783,26 +850,32 @@
 		border-radius: 30px;
 		width: 900px;
 	}
+
 	.popup-wrapper {
 		padding: 54px 45px 27px 45px;
 	}
+
 	.popup-title {
 		margin-bottom: 20px;
 		font-size: 36px;
 	}
+
 	.map {
 		width: 810px;
 		height: 490px;
 	}
+
 	.action_btn::after {
 		height: 35px;
 	}
+
 	.close_btn,
 	.print_btn {
 		gap: 10px;
 		width: 50%;
 		padding: 30px;
 	}
+
 	.close_btn div,
 	.print_btn div {
 		font-size: 30px;

@@ -23,9 +23,9 @@ function adjustPersonWrapLeft() {
 
     if (screenWidth === 3840) {
         if (loginDiv) {
-        personWrap.style.left = loginDiv ? `${2878 - loginWidth - extraWidth}px` : '2380px';
+        personWrap.style.left = loginDiv ? `${2417.54 - loginWidth - extraWidth}px` : '2124.54px';
         }else{
-         personWrap.style.left = '2878px';  
+         personWrap.style.left = '2417.54px';  
         }
     } else if (screenWidth === 2160) {
         if (loginDiv) {
@@ -35,9 +35,9 @@ function adjustPersonWrapLeft() {
         }
     } else if (screenWidth === 1920) {
         if (loginDiv) {
-        personWrap.style.left = loginDiv ? `${1439 - loginWidth - extraWidth}px` : '1190px';
+        personWrap.style.left = loginDiv ? `${1208.77 - loginWidth - extraWidth}px` : '1062.77px';
         }else{
-            personWrap.style.left = '1439px';    
+            personWrap.style.left = '1208.77px';    
         }
     } else if (screenWidth === 1080) {
         if (loginDiv) {
@@ -50,3 +50,5 @@ function adjustPersonWrapLeft() {
 
 window.addEventListener('load', adjustPersonWrapLeft);
 window.addEventListener('resize', adjustPersonWrapLeft);
+
+

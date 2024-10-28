@@ -18,7 +18,7 @@
 #landscape_02 {
 	width: 3200px;
 	height: 1070px;
-	margin-top: 360px;
+	margin-top: 340px;
 	overflow: visible;
 }
 
@@ -242,10 +242,10 @@
 
 #landscape_01 .swiper-pagination {
 	position: absolute !important;
-	top: 1452px !important;
+	top: 1400px !important;
 	display: flex !important;
 	justify-content: center;
-	gap: 40px !important;
+	gap: 28px !important;
 }
 
 #landscape_01 .swiper-slide-active {
@@ -337,7 +337,7 @@
 
 #landscape_02 .swiper-pagination {
 	position: absolute !important;
-	top: 1450px !important;
+	top: 1400px !important;
 	display: flex !important;
 	justify-content: center;
 	gap: 40px !important;
@@ -350,12 +350,14 @@
 #landscape_06 .swiper-slide,
 #landscape_07 .swiper-slide {
 	display: grid !important;
-	/* padding: 0 222px; */
+	padding: 0;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	/* grid-row-gap: 80px; */
-	grid-column-gap: 120px;
+	grid-column-gap: 100px;
 	justify-items: center;
-	width: 3220px !important;
+	width: 3060px !important;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #landscape_03 .slide-item,
@@ -444,11 +446,12 @@
 
 .recommendedbooks_wrap .ttabs {
 	top: 0;
-	width: 3220px;
+	width: 3060px;
 	position: unset;
 	z-index: 99999;
-	/* left: 50%; */
+	left: 50%;
 	/* transform: translateX(50%); */
+	margin: 0 auto;
 }
 
 .recommendedbooks_wrap .recom_tab {
@@ -900,7 +903,7 @@
 	#landscape_02 {
 		width: 1600px;
 		height: 535px;
-		margin-top: 180px;
+		margin-top: 170px;
 		overflow: visible;
 	}
 
@@ -1024,8 +1027,8 @@
 	}
 
 	#landscape_01 .swiper-pagination {
-		top: 726px !important;
-		gap: 20px !important;
+		top: 700px !important;
+		gap: 14px !important;
 	}
 
 	#landscape_02 .swiper-slide {
@@ -1066,7 +1069,7 @@
 	}
 
 	#landscape_02 .swiper-pagination {
-		top: 725px !important;
+		top: 700px !important;
 		gap: 20px !important;
 	}
 
@@ -1078,8 +1081,8 @@
 	#landscape_07 .swiper-slide {
 		display: grid !important;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-column-gap: 60px;
-		width: 1610px !important;
+		grid-column-gap: 50px;
+		width: 1530px !important;
 	}
 
 	#landscape_03 .slide-item,
@@ -1143,7 +1146,7 @@
 
 	.recommendedbooks_wrap .ttabs {
 		top: 0;
-		width: 1610px;
+		width: 1530px;
 		position: unset;
 	}
 
