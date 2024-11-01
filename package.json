@@ -1,0 +1,14 @@
+{
+  "name": "gyungbuk_smart-_book_recommendation",
+  "version": "1.0.0",
+  "description": "1. keyword_bubble.html이 키워드 검색 초기 화면이고 하단 도서추천 버튼 누를 시에 뜨는 화면이 keyword_book_tab.html입니다.\r 2. keyword_book_tab_person.html의 경우, 로그인 버튼이 활성화 되지 않았을 때 사람 오브젝트 위치를 잡아놓은 페이지이니 참고만 하시고 작업해주시면 됩니다.\r 3. keyword_result.html은 키워드 추천도서 결과에서 '내 취향을 저격할 또 다른 책 발견하러가기'로 이동했을 때, 페이지를 임의로 잡아둔 것입니다. 만약 자체 페이지에서 상단으로 페이지를 올리는 효과가 로딩하는데 시간이 많이 걸리는 경우에는 별도로 빼내어 해당 페이지로 작업하시면 될 것 같습니다.\r 4. book_information_hori.html(가로) / book_information_ver.html(세로)로 도서정보는 해상도 가로, 세로에 따라 콘솔 오류 때문에 따로 나눠놨습니다. 참고부탁드립니다.\r 5. 해당 작업 외에도 콘솔 충돌 및 css 작업 용이를 위해 모든 css, js를 페이지 별로 다 쪼갰습니다. 그렇기 때문에 head에 있는 경로가 다 다르기 때문에 헤드 부분은 타이틀단과 뷰포트를 제외한 css,js 연결해둔 부분은 모든 페이지가 다 다르다고 보시면 될 것 같습니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
