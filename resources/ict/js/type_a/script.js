@@ -30,7 +30,7 @@ $(function () {
 });
 
 $(function () {
-	const keywordCustomSwiper = new Swiper('.keyword_custom_swiper', {
+	const fourByFourSwiper = new Swiper('.common_four_by_four', {
 		speed: 600,
 		pagination: {
 			el: '.swiper-pagination',
@@ -43,8 +43,8 @@ $(function () {
 		},
 		slidesPerView: 1,
 		navigation: {
-			nextEl: '.keyword_custom_swiper .swiper-button-next',
-			prevEl: '.keyword_custom_swiper .swiper-button-prev',
+			nextEl: '.common_four_by_four .swiper-button-next',
+			prevEl: '.common_four_by_four .swiper-button-prev',
 		},
 	});
 });

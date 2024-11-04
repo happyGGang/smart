@@ -11,7 +11,7 @@
 		<script src="../../../../../resources/ict/plugin/jquery-3.7.1.min.js" type="text/javascript"></script>
 		<script src="../../../../../resources/ict/plugin/swiper-bundle.min.js" type="text/javascript"></script>
 		<script src="../../../../../resources/ict/js/type_a/script.js" type="text/javascript"></script>
-		<title>키워드</title>
+		<title>스마트 도서 A 타입</title>
 	</head>
 	<body>
 		<div class="common_content">
@@ -19,13 +19,12 @@
 				<div class="common_header_kr">키워드추천</div>
 				<div class="common_header_en">Keyword Recommended</div>
 			</div>
-
 			<div class="keyword_custom_content">
-				<div class="common_content_title black">회원님의 요즘 관심사는 무엇인가요?</div>
-				<div class="common_content_caption gary">빅데이터 분석으로 도서를 추천해드려요</div>
+				<div class="common_content_title black">이런 책은 어떤가요</div>
+				<div class="common_content_caption gary">회원님의 정보 및 독서취향을 분석한 맞춤책을 추천해드려요</div>
 
 				<!--	슬라이드 영역 : 스와이퍼 api 떄문에 이중 for 문 필요 ㅈㅅ	-->
-				<div class="swiper keyword_custom_swiper">
+				<div class="swiper common_four_by_four">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="slide-item">
@@ -178,13 +177,13 @@
 					</div>
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination" id="white"></div>
 				</div>
 			</div>
 		</div>
 		<div class="common_bottom_bar">
 			<div class="common_back_btn">
-				<!--	맞춤형 도서만 이전 버튼 아이콘, 텍스트 다름 / dark class 추가 필요	-->
+				<!--	맞춤형 도서만 이전 버튼 아이콘, 텍스트 색상  다름 / dark class 추가 필요	-->
 				<div class="common_back_btn_icon dark"></div>
 				<div class="common_back_btn_text dark">이전</div>
 			</div>
@@ -207,8 +206,11 @@
 					<div class="common_navigation_menu_kr">빅데이터추천</div>
 					<div class="common_navigation_menu_en">Big data Recommended</div>
 				</div>
-				<div class="common_auth common_logout">
-					<img alt="" src="/resources/ict/img/type_a/user.svg" />
+				<!--		status : login	-->
+				<div class="common_auth common_login">
+					<img alt="" src="/resources/ict/img/type_a/boy.svg" />
+					<div class="common_user_name"><span>남바다</span>님</div>
+					<div class="common_logout_caption">자리를 떠나실땐<br />클릭해서 로그아웃 해주세요</div>
 				</div>
 			</div>
 		</div>
