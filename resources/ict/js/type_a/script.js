@@ -20,7 +20,6 @@ $(window).on('load', function () {
 	});
 
 	$('.information_popup_close, .information_popup_overlay').on('click', function (e) {
-		// 팝업 내부 클릭 시 닫기 방지
 		if ($(e.target).closest('.information_popup_wrapper').length === 0 || $(e.target).is('.information_popup_close')) {
 			$('.information_popup_overlay').fadeOut();
 		}
