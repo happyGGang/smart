@@ -1332,6 +1332,7 @@ background: rgba(21, 26, 46, 0.50);
 .bigdata_filtering_list {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 164px;
   gap: 40px;
 }
@@ -1432,16 +1433,84 @@ background: rgba(21, 26, 46, 0.50);
   color: #666;
 }
 
+@media (width: 3840px) {
+  .bigdata_slide_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 3520px;
+    margin-left: 320px;
+  }
+
+  .bigdata_filtering_list {
+    margin-top: 120px;
+    margin-bottom: 105px;
+  }
+
+  .bigdata_swiper {
+    width: 3300px;
+    height: 980px;
+    margin-top: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .bigdata_swiper .swiper-slide {
+    display: grid !important;
+    border-radius: 24px;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .bigdata_swiper .slide-item {
+    width: 440px;
+  }
+
+  .bigdata_swiper .slide-item img {
+    width: 440px;
+    height: 637px;
+    margin-bottom: 40px;
+  }
+
+  .bigdata_swiper .swiper-button-next {
+    top: 420px;
+    right: -57px;
+  }
+
+  .bigdata_swiper .swiper-button-prev {
+    top: 420px;
+    left: -57px;
+  }
+
+}
 
 /* 도서 정보 */
 .information_selected_item_wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 1012px;
   height: 1012px;
   margin-top: 124px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(100px);
+}
+
+.information_top_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information_left_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .information_selected_item_wrapper img {
@@ -1779,4 +1848,49 @@ background: rgba(21, 26, 46, 0.50);
   height: 96px;
   background: url(../../img/type_a/arrow.svg) no-repeat top center;
   background-size: cover;
+}
+
+@media (width: 3840px) {
+  .information_content_wrapper {
+    display: flex;
+    width: 3520px;
+    margin-top: 80px;
+    margin-left: 320px;
+  }
+
+  .information_selected_item_wrapper {
+    margin-top: 0;
+    margin-left: 260px;
+  }
+
+  .information_selected_book_title {
+    display: -webkit-box;
+    width: 800px;
+    margin-top: 124px;
+    margin-left: 366px;
+    vertical-align: 2;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .information_selected_book_detail {
+    display: flex;
+    justify-content: center;
+    width: 1700px;
+  }
+
+  .information_popup_overlay {
+    z-index: 9999;
+  }
+
+  .information_popup_wrapper {
+    margin-left: 320px;
+  }
+
+  .information_left_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
