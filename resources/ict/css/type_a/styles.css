@@ -334,6 +334,140 @@
   color: #666;
 }
 
+@media (width: 1080px) {
+  .common_header_wrapper {
+    padding: 60px 0 40px 0;
+    gap: 8px;
+  }
+
+  .common_header_kr {
+    font-size: 38px;
+  }
+
+  .common_header_en {
+    font-size: 16px;
+    letter-spacing: 3.2px;
+  }
+
+  .common_content_title {
+    font-size: 50px;
+    margin-top: 39.5px;
+    margin-bottom: 12px;
+    letter-spacing: -1.25px;
+  }
+
+  .common_content_caption {
+    font-size: 30px;
+    letter-spacing: -0.75px;
+  }
+
+  .common_back_btn {
+    position: fixed;
+    bottom: 180px;
+    left: 15px;
+    width: 120px;
+    margin-left: 15px;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .common_back_btn_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .common_back_btn_text {
+    font-size: 24px;
+  }
+
+  .common_navigation_bar {
+    height: 160px;
+  }
+
+  .common_home {
+    width: 165px;
+    padding: 30px 0;
+  }
+
+  .common_home img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .common_navigation_menu {
+    width: 250px;
+    padding: 30px 0;
+  }
+
+  .common_navigation_menu img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .common_navigation_menu_kr {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+
+  .common_navigation_menu_en {
+    font-size: 10px;
+  }
+
+  .common_auth {
+    width: 165px;
+    padding: 30px 0;
+  }
+
+  .common_logout img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .common_login img {
+    width: 34px;
+    height: 45.5px;
+  }
+
+  .common_user_name {
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .common_logout_caption {
+    font-size: 10px;
+  }
+
+  .common_book_title {
+    font-size: 24px;
+    width: 220px;
+    margin-bottom: 4px;
+    letter-spacing: -0.6px;
+  }
+
+  .common_writer {
+    font-size: 20px;
+    width: 220px;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+  }
+
+  .common_publication {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  .common_four_by_four {
+    width: 1080px;
+    height: 1245px;
+    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background: #FFFFFF;
+  }
+}
 
 @media (width: 3840px) {
   .common_header_wrapper {
@@ -470,6 +604,141 @@
   }
 }
 
+@media (width: 1920px) {
+  .common_header_wrapper {
+    width: 1760px;
+    margin-left: 160px;
+    padding: 40px 0 40px 0;
+  }
+
+  .common_content_title {
+    width: 1760px;
+    margin-left: 160px;
+  }
+
+  .common_content_caption {
+    width: 1760px;
+    margin-left: 160px;
+  }
+
+  .common_header_kr {
+    font-size: 30px;
+  }
+
+  .common_header_en {
+    font-size: 12px;
+    letter-spacing: 2.4px;
+  }
+
+  .common_back_btn {
+    position: fixed;
+    bottom: 20px;
+    left: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    margin-left: 15px;
+    padding: 12px;
+    cursor: pointer;
+    gap: 12px;
+  }
+
+  .common_navigation_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 160px;
+    height: 100%;
+  }
+
+  .common_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    padding: 0 30px;
+    border-right: none;
+    border-bottom: 1px solid rgba(229, 232, 235, 0.40);
+  }
+
+  .common_navigation_menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 160px;
+    height: 250px;
+    padding: 0 30px;
+    white-space: nowrap;
+  }
+
+  .common_auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    padding: 0 30px;
+  }
+
+  .common_content {
+    display: flex;
+    flex-direction: column;
+    background: url(../../img/type_a/content_bg_x.svg) no-repeat top center;
+  }
+
+  .common_book_title {
+    width: 178px;
+  }
+
+  .common_writer {
+    width: 178px;
+  }
+
+  .common_four_by_four {
+    width: 1760px;
+    height: 490px;
+    margin-top: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 115px !important;
+  }
+
+  .common_four_by_four .swiper-slide {
+    display: grid !important;
+    border-radius: 12px;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 100px;
+  }
+
+  .common_four_by_four .slide-item {
+    width: 220px;
+  }
+
+  .common_four_by_four .slide-item img {
+    width: 220px;
+    height: 318.5px;
+    margin-bottom: 20px;
+  }
+
+  .common_four_by_four .swiper-button-next {
+    top: 210px;
+    right: 40px;
+  }
+
+  .common_four_by_four .swiper-button-prev {
+    top: 210px;
+    left: 35px;
+  }
+}
+
 /* 메인 */
 .main_content {
   display: flex;
@@ -565,6 +834,42 @@
   background-size: cover;
 }
 
+@media (width: 1080px) {
+  .main_book_img {
+    width: 765px;
+    height: 765px;
+    margin-top: 127.5px;
+  }
+
+  .main_title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    letter-spacing: -3px;
+  }
+
+  .main_caption {
+    font-size: 32px;;
+    letter-spacing: -0.8px;
+  }
+
+  .main_navigation_wrapper {
+    width: 540px;
+    height: 120px;
+    margin-top: 90px;
+    padding: 0 20px 0 80px;
+    border-radius: 100px;
+  }
+
+  .main_navigation_text {
+    font-size: 30px;
+    letter-spacing: -0.75px;
+  }
+
+  .main_navigation_icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 @media (width: 3840px) {
   .main_content {
@@ -584,6 +889,57 @@
   .main_title {
     margin-bottom: 60px;
     letter-spacing: -3px;
+  }
+
+  .ml {
+    margin-left: 0 !important;
+  }
+}
+
+@media (width: 1920px) {
+  .main_book_img {
+    width: 765px;
+    height: 765px;
+    margin-top: 0;
+  }
+
+  .main_title {
+    font-size: 60px;
+    margin-bottom: 30px;
+    letter-spacing: -1.5px;
+  }
+
+  .main_caption {
+    font-size: 32px;
+    letter-spacing: -0.8px;
+  }
+
+  .main_navigation_wrapper {
+    width: 540px;
+    height: 120px;
+    margin-top: 90px;
+    padding: 0 20px 0 80px;
+    border-radius: 100px;
+  }
+
+  .main_navigation_text {
+    font-size: 30px;
+    letter-spacing: -0.75px;
+  }
+
+  .main_navigation_icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .main_content {
+    background: url(../../img/type_a/main_bg_x.svg) no-repeat top center;
+  }
+
+  .main_content_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 100px;
   }
 
   .ml {
