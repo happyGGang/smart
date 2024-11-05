@@ -14,6 +14,17 @@ $(window).on('load', function () {
 		})
 		.first()
 		.click();
+
+	$('.information_popup_trigger').on('click', function () {
+		$('.information_popup_overlay').fadeIn();
+	});
+
+	$('.information_popup_close, .information_popup_overlay').on('click', function (e) {
+		// 팝업 내부 클릭 시 닫기 방지
+		if ($(e.target).closest('.information_popup_wrapper').length === 0 || $(e.target).is('.information_popup_close')) {
+			$('.information_popup_overlay').fadeOut();
+		}
+	});
 });
 
 $(function () {
@@ -72,6 +83,22 @@ $(function () {
 		navigation: {
 			nextEl: '.bigdata_swiper .swiper-button-next',
 			prevEl: '.bigdata_swiper .swiper-button-prev',
+		},
+	});
+});
+
+$(function () {
+	const informationSwiper = new Swiper('.information_swiper', {
+		speed: 600,
+		loop: true,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true,
+		},
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.information_swiper .swiper-button-next',
+			prevEl: '.information_swiper .swiper-button-prev',
 		},
 	});
 });
