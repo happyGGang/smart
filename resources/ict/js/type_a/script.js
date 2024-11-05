@@ -55,9 +55,6 @@ $(function () {
 		},
 		loop: true,
 		effect: 'fade',
-		fadeEffect: {
-			crossFade: true,
-		},
 		slidesPerView: 1,
 		navigation: {
 			nextEl: '.common_four_by_four .swiper-button-next',

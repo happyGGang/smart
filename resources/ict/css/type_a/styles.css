@@ -429,6 +429,45 @@
   .common_writer {
     width: 356px;
   }
+
+  .common_four_by_four {
+    width: 3520px;
+    height: 980px;
+    margin-top: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 230px !important;
+  }
+
+  .common_four_by_four .swiper-slide {
+    display: grid !important;
+    border-radius: 24px;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 200px;
+  }
+
+  .common_four_by_four .slide-item {
+    width: 440px;
+  }
+
+  .common_four_by_four .slide-item img {
+    width: 440px;
+    height: 637px;
+    margin-bottom: 40px;
+  }
+
+  .common_four_by_four .swiper-button-next {
+    top: 420px;
+    right: 80px;
+  }
+
+  .common_four_by_four .swiper-button-prev {
+    top: 420px;
+    left: 50px;
+  }
 }
 
 /* 메인 */
@@ -1266,6 +1305,27 @@ background: rgba(21, 26, 46, 0.50);
   letter-spacing: -1px;
   text-overflow: ellipsis;
   color: #8B95A1;
+}
+
+@media (width: 3840px) {
+  .keyword_custom_content {
+    width: 3520px;
+    margin-left: 320px;
+    padding-top: 121px;
+  }
+
+  .keyword_custom_slider_wrapper {
+    margin-top: 165px;
+  }
+}
+
+/* 사서추천 */
+@media (width: 3840px) {
+  .librarian_slider_wrapper {
+    width: 3520px;
+    margin-left: 320px;
+    padding-top: 285px;
+  }
 }
 
 /* 빅데이터 */
