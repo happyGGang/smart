@@ -2675,6 +2675,99 @@ background: rgba(21, 26, 46, 0.50);
   color: #666;
 }
 
+@media (width: 1080px) {
+  .bigdata_filtering_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 82px;
+    gap: 20px;
+  }
+
+  .bigdata_filtering_list_item {
+    font-family: "Pretendard", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 80px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ADB5BD;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    border-radius: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), #4E5968;
+  }
+
+  .bigdata_filtering_list_item_active {
+    color: #FFFFFF !important;
+    background: #3537AC !important;
+  }
+
+  .bigdata_swiper {
+    width: 1080px;
+    height: 1000px;
+    margin-top: 80px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-bottom: 40px !important;
+    padding-left: 105px !important;
+  }
+
+  .bigdata_swiper .swiper-slide {
+    display: grid !important;
+    border-radius: 12px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bigdata_swiper .slide-item {
+    width: 220px;
+    height: 422px;
+  }
+
+  .bigdata_swiper .slide-item img {
+    width: 220px;
+    height: 318.5px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.20);
+    object-fit: cover;
+  }
+
+  .bigdata_swiper .swiper-button-next {
+    top: 400px;
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    background: url(../../img/type_a/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .bigdata_swiper .swiper-button-prev {
+    top: 500px;
+    width: 80px;
+    height: 80px;
+    background: url(../../img/type_a/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .bigdata_swiper .swiper-pagination-fraction {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #666;
+  }
+}
+
 @media (width: 3840px) {
   .bigdata_slide_wrapper {
     display: flex;
@@ -2727,6 +2820,96 @@ background: rgba(21, 26, 46, 0.50);
     left: -57px;
   }
 
+}
+
+@media (width: 1920px) {
+  .bigdata_filtering_list_item {
+    font-family: "Pretendard", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 80px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ADB5BD;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    border-radius: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), #4E5968;
+  }
+
+  .bigdata_slide_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1760px;
+    margin-left: 160px;
+  }
+
+  .bigdata_filtering_list {
+    margin-top: 60px;
+    margin-bottom: 52.5px;
+    gap: 20px;
+  }
+
+  .bigdata_swiper {
+    width: 1650px;
+    height: 490px;
+    margin-top: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .bigdata_swiper .swiper-slide {
+    display: grid !important;
+    border-radius: 12px;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .bigdata_swiper .slide-item {
+    width: 220px;
+  }
+
+  .bigdata_swiper .slide-item img {
+    width: 220px;
+    height: 318.5px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+
+  .bigdata_swiper .swiper-button-next {
+    top: 210px;
+    right: -28.5px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .bigdata_swiper .swiper-button-prev {
+    top: 210px;
+    left: -28.5px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .bigdata_swiper .swiper-pagination-fraction {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #666;
+  }
 }
 
 /* 도서 정보 */
