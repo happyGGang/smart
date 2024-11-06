@@ -2562,6 +2562,14 @@ background: rgba(21, 26, 46, 0.50);
   }
 }
 
+@media (width: 1920px) {
+  .librarian_slider_wrapper {
+    width: 1760px;
+    margin-left: 160px;
+    padding-top: 142.5px;
+  }
+}
+
 /* 빅데이터 */
 .bigdata_filtering_list {
   display: flex;
