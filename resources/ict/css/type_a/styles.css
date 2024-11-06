@@ -751,7 +751,22 @@
   }
 
   .common_book_title {
-    width: 178px;
+    font-size: 24px;
+    width: 220px;
+    margin-bottom: 4px;
+    letter-spacing: -0.6px;
+  }
+
+  .common_writer {
+    font-size: 20px;
+    width: 220px;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+  }
+
+  .common_publication {
+    font-size: 20px;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -1995,6 +2010,131 @@ background: rgba(21, 26, 46, 0.50);
   background-size: cover;
 }
 
+@media (width: 1080px) {
+  .keyword_result_swiper {
+    width: 1080px;
+    height: 1430px;
+    margin-top: 18px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-bottom: 40px !important;
+    padding-left: 105px !important;
+  }
+
+  .keyword_result_swiper .swiper-slide {
+    display: grid !important;
+    border-radius: 12px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .keyword_result_swiper .slide-item {
+    width: 220px;
+    height: 422px;
+  }
+
+  .keyword_result_swiper .slide-item img {
+    width: 220px;
+    height: 318.5px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.20);
+    object-fit: cover;
+  }
+
+  .keyword_result_swiper .swiper-button-next {
+    top: 799.5px;
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    background: url(../../img/type_a/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .keyword_result_swiper .swiper-button-prev {
+    top: 799.5px;
+    width: 80px;
+    height: 80px;
+    background: url(../../img/type_a/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .keyword_result_swiper .swiper-pagination-fraction {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #666;
+  }
+
+  .keyword_result_custom_btn {
+    position: fixed;
+    right: 40px;
+    bottom: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 430px;
+    height: 93.5px;
+    padding-right: 40px;
+    border-radius: 50px;
+    background: rgba(21, 26, 46, 0.50);
+  }
+
+  .keyword_result_custom_btn_character {
+    position: absolute;
+    bottom: 0.5px;
+    left: 32px;
+    width: 113.4995px;
+    height: 99.466px;
+    background: url(../../img/type_a/girl.png) no-repeat top center;
+    background-size: cover;
+  }
+
+  .keyword_result_custom_btn_text {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-align: right;
+    letter-spacing: -2.4px;
+    background: linear-gradient(90deg, #62ECE5 0%, #78ADF9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .keyword_result_custom_btn_caption_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .keyword_result_custom_btn_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-align: right;
+    letter-spacing: -2px;
+    color: #8B95A1;
+  }
+
+  .keyword_result_custom_btn_caption_icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+    background: url(../../img/type_a/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+}
+
 @media (width: 3840px) {
   .keyword_result_custom_btn {
     bottom: 60px;
@@ -2038,6 +2178,125 @@ background: rgba(21, 26, 46, 0.50);
 
   .keyword_result_swiper .swiper-pagination-fraction {
     margin-left: 137px !important;
+  }
+}
+
+@media (width: 1920px) {
+  .keyword_result_custom_btn {
+    bottom: 30px;
+  }
+
+  .keyword_result_swiper {
+    width: 1850px;
+    height: 825px;
+    margin-top: 30px;
+    padding-right: 255px !important;
+    padding-bottom: 65px !important;
+    padding-left: 255px !important;
+  }
+
+  .keyword_result_swiper .swiper-slide {
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 152.5px;
+  }
+
+  .keyword_result_swiper .slide-item {
+    width: 178px;
+    height: 352px;
+  }
+
+  .keyword_result_swiper .slide-item img {
+    width: 178px;
+    height: 257.5px;
+    margin-bottom: 7px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.20);
+  }
+
+  .keyword_result_swiper .swiper-button-next {
+    top: 375px;
+    right: -15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .keyword_result_swiper .swiper-button-prev {
+    top: 375px;
+    left: 150px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .keyword_result_swiper .swiper-pagination-fraction {
+    font-size: 20px;
+    margin-left: 68.5px !important;
+    letter-spacing: -1px;
+  }
+
+  .keyword_result_custom_btn {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 430px;
+    height: 93.5px;
+    padding-right: 40px;
+    border-radius: 50px;
+    background: rgba(21, 26, 46, 0.50);
+  }
+
+  .keyword_result_custom_btn_character {
+    position: absolute;
+    bottom: 0.5px;
+    left: 32px;
+    width: 113.4995px;
+    height: 99.466px;
+    background: url(../../img/type_a/girl.png) no-repeat top center;
+    background-size: cover;
+  }
+
+  .keyword_result_custom_btn_text {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-align: right;
+    letter-spacing: -2.4px;
+    background: linear-gradient(90deg, #62ECE5 0%, #78ADF9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .keyword_result_custom_btn_caption_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .keyword_result_custom_btn_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-align: right;
+    letter-spacing: -2px;
+    color: #8B95A1;
+  }
+
+  .keyword_result_custom_btn_caption_icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+    background: url(../../img/type_a/arrow.svg) no-repeat top center;
+    background-size: cover;
   }
 }
 
