@@ -493,7 +493,7 @@
 
   .common_four_by_four .swiper-button-next {
     top: 550px;
-    right: 53px;
+    right: 40px;
     width: 80px;
     height: 80px;
     transform: rotate(180deg);
@@ -2749,7 +2749,7 @@ background: rgba(21, 26, 46, 0.50);
   }
 
   .bigdata_swiper .swiper-button-prev {
-    top: 500px;
+    top: 400px;
     width: 80px;
     height: 80px;
     background: url(../../img/type_a/arrow.svg) no-repeat top center;
@@ -2812,12 +2812,12 @@ background: rgba(21, 26, 46, 0.50);
 
   .bigdata_swiper .swiper-button-next {
     top: 420px;
-    right: -57px;
+    right: -55px;
   }
 
   .bigdata_swiper .swiper-button-prev {
     top: 420px;
-    left: -57px;
+    left: -55px;
   }
 
 }
@@ -2888,14 +2888,14 @@ background: rgba(21, 26, 46, 0.50);
 
   .bigdata_swiper .swiper-button-next {
     top: 210px;
-    right: -28.5px;
+    right: -27px;
     width: 80px;
     height: 80px;
   }
 
   .bigdata_swiper .swiper-button-prev {
     top: 210px;
-    left: -28.5px;
+    left: -27px;
     width: 80px;
     height: 80px;
   }
@@ -3651,7 +3651,7 @@ background: rgba(21, 26, 46, 0.50);
     display: -webkit-box;
     width: 800px;
     margin-top: 124px;
-    margin-left: 366px;
+    margin-left: 260px;
     vertical-align: 2;
     white-space: normal;
     -webkit-box-orient: vertical;
@@ -3728,7 +3728,7 @@ background: rgba(21, 26, 46, 0.50);
     display: -webkit-box;
     width: 400px;
     margin-top: 62px;
-    margin-left: 183px;
+    margin-left: 135px;
     vertical-align: 2;
     white-space: normal;
     -webkit-box-orient: vertical;
