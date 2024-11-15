@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  width: 2160px;
   padding: 120px 0 80px 0;
   gap: 16px;
 }
@@ -336,6 +337,9 @@
 
 @media (width: 1080px) {
   .common_header_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 1080px;
     padding: 60px 0 40px 0;
     gap: 8px;
   }
@@ -900,208 +904,803 @@
 /* 메인 */
 .main_content {
   display: flex;
-  align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  padding-right: 230px;
   background: url(../../img/type_a/main_bg.svg) no-repeat top center;
   background-size: cover;
 }
 
-.main_book_img {
-  width: 1530px;
-  height: 1530px;
-  margin-top: 255px;
-  background: url(../../img/type_a/main_icon.svg) no-repeat top center;
-  background-size: cover;
-}
-
-.main_text_wrapper {
+.main_content_wrapper {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  gap: 400px;
 }
 
-.main_title {
+.main_top_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 319px;
+  margin-left: 230px;
+  gap: 140px;
+}
+
+.main_search_title {
   font-family: "Pretendard", sans-serif;
   font-size: 120px;
   font-weight: 600;
   font-style: normal;
-  line-height: 140%;
-  margin-bottom: 40px;
-  animation: slideUp 0.8s ease-out;
-  text-align: center;
-  letter-spacing: -6px;
+  line-height: normal;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  letter-spacing: -3px;
   color: #FFF;
 }
 
-.main_caption {
+
+.main_search_caption {
   font-family: "Pretendard", sans-serif;
-  font-size: 64px;
+  font-size: 68px;
   font-weight: 400;
   font-style: normal;
   line-height: 140%;
-  animation: slideUp 1s ease-out;
-  text-align: center;
-  letter-spacing: -1.6px;
+  margin-left: 80px;
+  letter-spacing: -3.4px;
   color: #EFF1F3;
 }
 
-.main_navigation_wrapper {
+.main_search_filtering_list_item {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  padding: 0 39px 0 38px;
+  white-space: nowrap;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+  color: #191F28;
+  border: 1px solid #191F28;
+  border-radius: 50%;
+}
+
+.main_search_filtering_list_item.active {
+  font-weight: 600;
+  color: #3537AC;
+  border: 4px solid #3537AC;
+}
+
+.main_search_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main_search_filtering_list {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  gap: 20px;
+}
+
+.main_search_bar_wrapper {
+  position: relative;
+}
+
+.main_search_bar_character {
+  position: absolute;
+  bottom: 277.33px;
+  left: 150px;
+  width: 772px;
+  height: 342.668px;
+  background: url(../../img/type_a/monster.png) no-repeat top center;
+  background-size: cover;
+}
+
+.main_search_bar_wrapper input {
+  font-family: "Pretendard", sans-serif;
+  font-size: 76px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  width: 1700px;
+  height: 320px;
+  padding: 60px 350px 60px 150px;
+  letter-spacing: -1.9px;
+  color: #191F28;
+  border-radius: 200px;
+  background: #F8F7F6;
+}
+
+.main_search_bar_wrapper input {
+  color: #6B7684;
+}
+
+.main_search_bar_wrapper input:focus {
+  outline: none;
+}
+
+.main_search_bar_btn {
+  position: absolute;
+  right: 90px;
+  bottom: 60px;
+  width: 200px;
+  height: 200px;
+  background: url(../../img/type_a/search_btn.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.main_bottom_wrapper {
+  display: flex;
+  margin-left: 310px;
+}
+
+.main_recommend_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  width: 920px;
+  margin-bottom: 24px;
+  letter-spacing: -3px;
+  color: #FFF;
+}
+
+.main_recommend_caption {
+  font-family: "Pretendard", sans-serif;
+  font-size: 68px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  width: 834px;
+  letter-spacing: -3.4px;
+  color: #EFF1F3;
+}
+
+.main_recommend_btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1080px;
-  height: 240px;
-  margin-top: 180px;
-  padding: 0 40px 0 160px;
-  border-radius: 200px;
-  background: #FFF;
+  width: 640px;
+  margin-top: 80px;
 }
 
-.main_navigation_wrapper:hover {
-  opacity: 0.7;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.main_navigation_text {
+.main_recommend_btn_label {
   font-family: "Pretendard", sans-serif;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   line-height: 140%;
   text-align: center;
   letter-spacing: -1.5px;
-  color: #333D4B;
+  color:  #EFF1F3;
 }
 
-.main_navigation_icon {
-  width: 160px;
-  height: 160px;
+.main_recommend_btn_icon {
+  width: 120px;
+  height: 120px;
   background: url(../../img/type_a/main_arrow.svg) no-repeat top center;
   background-size: cover;
 }
 
+.main_recommend_img {
+  width: 700px;
+  height: 732.357px;
+  margin-top: 114px;
+  background: url(../../img/type_a/monster2.svg) no-repeat top center;
+  background-size: cover;
+}
+
 @media (width: 1080px) {
-  .main_book_img {
-    width: 765px;
-    height: 765px;
-    margin-top: 127.5px;
+  .main_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-right: 115px;
+    background: url(../../img/type_a/main_bg.svg) no-repeat top center;
+    background-size: cover;
   }
 
-  .main_title {
+  .main_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+  }
+
+  .main_top_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 159.5px;
+    margin-left: 115px;
+    gap: 70px;
+  }
+
+  .main_search_title {
+    font-family: "Pretendard", sans-serif;
     font-size: 60px;
-    margin-bottom: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 40px;
     letter-spacing: -3px;
+    color: #FFF;
   }
 
-  .main_caption {
-    font-size: 32px;;
-    letter-spacing: -0.8px;
+
+  .main_search_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    margin-left: 40px;
+    letter-spacing: -3.4px;
+    color: #EFF1F3;
   }
 
-  .main_navigation_wrapper {
-    width: 540px;
-    height: 120px;
-    margin-top: 90px;
-    padding: 0 20px 0 80px;
+  .main_search_filtering_list_item {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    padding: 0 19.5px 0 19px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    color: #191F28;
+    border: 0.5px solid #191F28;
+    border-radius: 50%;
+  }
+
+  .main_search_filtering_list_item.active {
+    font-weight: 600;
+    color: #3537AC;
+    border: 2px solid #3537AC;
+  }
+
+  .main_search_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    gap: 20px;
+  }
+
+  .main_search_filtering_list {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 45px;
+    gap: 10px;
+  }
+
+  .main_search_bar_wrapper {
+    position: relative;
+  }
+
+  .main_search_bar_character {
+    position: absolute;
+    bottom: 138.665px;
+    left: 75px;
+    width: 386px;
+    height: 171.334px;
+    background: url(../../img/type_a/monster.png) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_search_bar_wrapper input {
+    font-family: "Pretendard", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    width: 850px;
+    height: 160px;
+    padding: 30px 175px 30px 75px;
+    letter-spacing: -1.9px;
+    color: #191F28;
     border-radius: 100px;
+    background: #F8F7F6;
   }
 
-  .main_navigation_text {
+  .main_search_bar_wrapper input {
+    color: #6B7684;
+  }
+
+  .main_search_bar_wrapper input:focus {
+    outline: none;
+  }
+
+  .main_search_bar_btn {
+    position: absolute;
+    right: 45px;
+    bottom: 30px;
+    width: 100px;
+    height: 100px;
+    background: url(../../img/type_a/search_btn.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_bottom_wrapper {
+    display: flex;
+    margin-left: 155px;
+  }
+
+  .main_recommend_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    width: 460px;
+    margin-bottom: 12px;
+    letter-spacing: -3px;
+    color: #FFF;
+  }
+
+  .main_recommend_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    width: 417px;
+    letter-spacing: -3.4px;
+    color: #EFF1F3;
+  }
+
+  .main_recommend_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    margin-top: 40px;
+  }
+
+  .main_recommend_btn_label {
+    font-family: "Pretendard", sans-serif;
     font-size: 30px;
-    letter-spacing: -0.75px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color:  #EFF1F3;
   }
 
-  .main_navigation_icon {
-    width: 80px;
-    height: 80px;
+  .main_recommend_btn_icon {
+    width: 60px;
+    height: 60px;
+    background: url(../../img/type_a/main_arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_recommend_img {
+    width: 350px;
+    height: 366.1785px;
+    margin-top: 57px;
+    background: url(../../img/type_a/monster2.svg) no-repeat top center;
+    background-size: cover;
   }
 }
 
 @media (width: 3840px) {
   .main_content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
     background: url(../../img/type_a/main_bg_x.svg) no-repeat top center;
+    background-size: cover;
   }
 
   .main_content_wrapper {
     display: flex;
-    align-items: center;
-    gap: 200px;
+    flex-direction: row;
+    gap: 117px;
   }
 
-  .main_book_img {
-    margin-top: 0;
+  .main_top_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 280px;
+    margin-left: 458px;
+    gap: 100px;
   }
 
-  .main_title {
-    margin-bottom: 60px;
+  .main_search_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-left: 80px;
     letter-spacing: -3px;
+    color: #FFF;
   }
 
-  .ml {
-    margin-left: 0 !important;
+
+  .main_search_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    margin-left: 80px;
+    letter-spacing: -3.4px;
+    color: #EFF1F3;
+  }
+
+  .main_search_caption br {
+    display: none;
+  }
+
+  .main_search_filtering_list_item {
+    font-family: "Pretendard", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 0 39px 0 38px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    color: #191F28;
+    border: 1px solid #191F28;
+    border-radius: 50%;
+  }
+
+  .main_search_filtering_list_item.active {
+    font-weight: 600;
+    color: #3537AC;
+    border: 4px solid #3537AC;
+  }
+
+  .main_search_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .main_search_filtering_list {
+    display: flex;
+    justify-content: flex-end;
+    width: 1480px;
+    padding-right: 40px;
+    gap: 20px;
+  }
+
+  .main_search_bar_wrapper {
+    position: relative;
+    width: 1480px;
+  }
+
+  .main_search_bar_character {
+    position: absolute;
+    bottom: 246px;
+    left: 130px;
+    width: 610px;
+    height: 271px;
+    background: url(../../img/type_a/monster.png) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_search_bar_wrapper input {
+    font-family: "Pretendard", sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    width: 1480px;
+    height: 280px;
+    padding: 40px 240px 40px 100px;
+    letter-spacing: -1.9px;
+    color: #191F28;
+    border-radius: 200px;
+    background: #F8F7F6;
+  }
+
+  .main_search_bar_wrapper input {
+    color: #6B7684;
+  }
+
+  .main_search_bar_wrapper input:focus {
+    outline: none;
+  }
+
+  .main_search_bar_btn {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 200px;
+    height: 200px;
+    background: url(../../img/type_a/search_btn.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_bottom_wrapper {
+    display: flex;
+    margin-top: 280px;
+    margin-left: 80px;
+  }
+
+  .main_recommend_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 80px;
+    letter-spacing: -3px;
+    color:#FFF;
+  }
+
+  .main_recommend_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    width: 834px;
+    letter-spacing: -3.4px;
+    color: #EFF1F3;
+  }
+
+  .main_recommend_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 640px;
+    margin-top: 140px;
+  }
+
+  .main_recommend_btn_label {
+    font-family: "Pretendard", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color:  #EFF1F3;
+  }
+
+  .main_recommend_btn_icon {
+    width: 120px;
+    height: 120px;
+    background: url(../../img/type_a/main_arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_recommend_img {
+    width: 700px;
+    height: 732.357px;
+    margin-top: 309px;
+    margin-left: -70px;
+    background: url(../../img/type_a/monster2.svg) no-repeat top center;
+    background-size: cover;
   }
 }
 
 @media (width: 1920px) {
-  .main_book_img {
-    width: 765px;
-    height: 765px;
-    margin-top: 0;
-  }
-
-  .main_title {
-    font-size: 60px;
-    margin-bottom: 30px;
-    letter-spacing: -1.5px;
-  }
-
-  .main_caption {
-    font-size: 32px;
-    letter-spacing: -0.8px;
-  }
-
-  .main_navigation_wrapper {
-    width: 540px;
-    height: 120px;
-    margin-top: 90px;
-    padding: 0 20px 0 80px;
-    border-radius: 100px;
-  }
-
-  .main_navigation_text {
-    font-size: 30px;
-    letter-spacing: -0.75px;
-  }
-
-  .main_navigation_icon {
-    width: 80px;
-    height: 80px;
-  }
-
   .main_content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
     background: url(../../img/type_a/main_bg_x.svg) no-repeat top center;
+    background-size: cover;
   }
 
   .main_content_wrapper {
     display: flex;
-    align-items: center;
-    gap: 100px;
+    flex-direction: row;
+    gap: 58.5px;
   }
 
-  .ml {
-    margin-left: 0 !important;
+  .main_top_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    margin-left: 229px;
+    gap: 50px;
+  }
+
+  .main_search_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    letter-spacing: -3px;
+    color: #FFF;
+  }
+
+
+  .main_search_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    margin-left: 40px;
+    letter-spacing: -3.4px;
+    color: #EFF1F3;
+  }
+
+  .main_search_caption br {
+    display: none;
+  }
+
+  .main_search_filtering_list_item {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    padding: 0 19.5px 0 19px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    color: #191F28;
+    border: 0.5px solid #191F28;
+    border-radius: 50%;
+  }
+
+  .main_search_filtering_list_item.active {
+    font-weight: 600;
+    color: #3537AC;
+    border: 2px solid #3537AC;
+  }
+
+  .main_search_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main_search_filtering_list {
+    display: flex;
+    justify-content: flex-end;
+    width: 740px;
+    padding-right: 20px;
+    gap: 10px;
+  }
+
+  .main_search_bar_wrapper {
+    position: relative;
+    width: 740px;
+  }
+
+  .main_search_bar_character {
+    position: absolute;
+    bottom: 123px;
+    left: 65px;
+    width: 305px;
+    height: 135.5px;
+    background: url(../../img/type_a/monster.png) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_search_bar_wrapper input {
+    font-family: "Pretendard", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    width: 749px;
+    height: 140px;
+    padding: 20px 120px 20px 50px;
+    letter-spacing: -1.9px;
+    color: #191F28;
+    border-radius: 100px;
+    background: #F8F7F6;
+  }
+
+  .main_search_bar_wrapper input {
+    color: #6B7684;
+  }
+
+  .main_search_bar_wrapper input:focus {
+    outline: none;
+  }
+
+  .main_search_bar_btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    background: url(../../img/type_a/search_btn.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_bottom_wrapper {
+    display: flex;
+    margin-top: 140px;
+    margin-left: 40px;
+  }
+
+  .main_recommend_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    width: 460px;
+    margin-bottom: 20px;
+    letter-spacing: -3px;
+    color:#FFF;
+  }
+
+  .main_recommend_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    width: 417px;
+    letter-spacing: -3.4px;
+    color: #EFF1F3;
+  }
+
+  .main_recommend_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    margin-top: 70px;
+  }
+
+  .main_recommend_btn_label {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color:  #EFF1F3;
+  }
+
+  .main_recommend_btn_icon {
+    width: 60px;
+    height: 60px;
+    background: url(../../img/type_a/main_arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .main_recommend_img {
+    width: 350px;
+    height: 366.1785px;
+    margin-top: 154.5px;
+    margin-left: -35px;
+    background: url(../../img/type_a/monster2.svg) no-repeat top center;
+    background-size: cover;
   }
 }
 

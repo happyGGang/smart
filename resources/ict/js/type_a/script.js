@@ -26,6 +26,14 @@ $(window).on('load', function () {
 	});
 });
 
+$(document).ready(function () {
+	$('.main_search_filtering_list_item').first().addClass('active');
+	$('.main_search_filtering_list_item').on('click', function () {
+		$('.main_search_filtering_list_item').removeClass('active');
+		$(this).addClass('active');
+	});
+});
+
 $(function () {
 	const keywordResultSwiper = new Swiper('.keyword_result_swiper', {
 		speed: 600,

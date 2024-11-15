@@ -16,22 +16,67 @@
 	<body>
 		<div class="main_content">
 			<div class="common_header_wrapper ml">
-				<div class="common_header_kr">스마트도서추천</div>
-				<div class="common_header_en">Smart Book Recommendation</div>
+				<div class="common_header_kr">AI도서추천검색</div>
+				<div class="common_header_en">AI book recommendation search</div>
 			</div>
 			<div class="main_content_wrapper">
-				<div class="main_book_img"></div>
-				<div class="main_text_wrapper">
-					<div class="main_title">나에게 딱 맞는 책을 만나보세요!</div>
-					<div class="main_caption">
-						무슨책을 읽어야 할지 고민하는 회원님을 위해<br />
-						도서 추천 콘텐츠를 제공해드려요
+				<div class="main_top_wrapper">
+					<div>
+						<div class="main_search_title">회원님, 어떤책을<br />찾고 계신가요?</div>
+						<div class="main_search_caption">
+							책 제목이나 작가 정보 등<br />
+							원하시는 책을 검색해보세요
+						</div>
 					</div>
-					<!--		네비게이션	버튼	-->
-					<div class="main_navigation_wrapper">
-						<div class="main_navigation_text">도서 추천받으러 가기</div>
-						<div class="main_navigation_icon"></div>
+					<div class="main_search_wrapper">
+						<div class="main_search_filtering_list">
+							<div class="main_search_filtering_list_item active">책제목</div>
+							<div class="main_search_filtering_list_item">저자명</div>
+							<div class="main_search_filtering_list_item">출반사</div>
+						</div>
+						<div class="main_search_bar_wrapper">
+							<div class="main_search_bar_character"></div>
+							<input placeholder="검색어를 입력해주세요" type="text" />
+							<div class="main_search_bar_btn"></div>
+						</div>
 					</div>
+				</div>
+
+				<div class="main_bottom_wrapper">
+					<div>
+						<div class="main_recommend_title">나에게 딱 맞는 책을 만나보세요!</div>
+						<div class="main_recommend_caption">무슨책을 읽어야 할지 고민하는<br />회원님을 위해 도서 추천 콘텐츠를 제공해드려요</div>
+						<div class="main_recommend_btn">
+							<div class="main_recommend_btn_label">도서 추천받으러 가기</div>
+							<div class="main_recommend_btn_icon"></div>
+						</div>
+					</div>
+					<div class="main_recommend_img"></div>
+				</div>
+			</div>
+			<div class="common_navigation_bar">
+				<div class="common_navigation_menu">
+					<img alt="" src="/resources/ict/img/type_a/search.svg" />
+					<div class="common_navigation_menu_kr">도서검색</div>
+					<div class="common_navigation_menu_en">BOOK SEARCH</div>
+				</div>
+				<div class="common_navigation_menu">
+					<img alt="" src="/resources/ict/img/type_a/keyword.svg" />
+					<div class="common_navigation_menu_kr">키워드추천</div>
+					<div class="common_navigation_menu_en">Keyword Recommended</div>
+				</div>
+				<div class="common_navigation_menu">
+					<img alt="" src="/resources/ict/img/type_a/lib.svg" />
+					<div class="common_navigation_menu_kr">사서추천</div>
+					<div class="common_navigation_menu_en">librarian Recommended</div>
+				</div>
+				<div class="common_navigation_menu">
+					<img alt="" src="/resources/ict/img/type_a/bigdata.svg" />
+					<div class="common_navigation_menu_kr">빅데이터추천</div>
+					<div class="common_navigation_menu_en">Big data Recommended</div>
+				</div>
+				<div class="common_auth common_logout">
+					<img alt="" src="/resources/ict/img/type_a/user.svg" />
 				</div>
 			</div>
 		</div>
