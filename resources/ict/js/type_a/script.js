@@ -106,3 +106,23 @@ $(function () {
 		},
 	});
 });
+
+$(function () {
+	const kioskNoticeXSwiper = new Swiper('.search_swiper', {
+		speed: 600,
+		loop: true,
+		slidesPerGroup: 6,
+		slidesPerView: 6,
+		navigation: {
+			nextEl: '.search_swiper .swiper-button-next',
+			prevEl: '.search_swiper .swiper-button-prev',
+		},
+		fadeEffect: {
+			crossFade: true,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+		},
+	});
+});

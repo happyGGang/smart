@@ -4631,3 +4631,153 @@ background: rgba(21, 26, 46, 0.50);
     background-size: cover;
   }
 }
+
+.search_container {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/type_a/search_bg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.search_total {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  width: 1700px;
+  margin-top: 80px;
+  margin-left: 230px;
+  padding-bottom: 36px;
+  letter-spacing: -1.2px;
+  color: #191F28;
+  border-bottom: 1px solid #6B7684;
+}
+
+.search_total span {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  color: #191F28;
+}
+
+ .swiper-item {
+  display: flex;
+  flex-direction: row;
+  width: 1700px !important;
+  height: 410px;
+  padding: 48px 0 48px 0;
+  border-bottom: 1px solid #6B7684;
+   gap: 60px;
+}
+
+ .swiper-item img {
+  width: 210px;
+  height: 303px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.20);
+}
+
+.search_book_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 1410px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.search_book_writer {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 8px;
+  letter-spacing: -1.2px;
+  color: #191F28;
+}
+
+.search_book_year {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 8px;
+  letter-spacing: -1.2px;
+  color: #333D4B;
+}
+
+.search_book_detail_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1410px;
+}
+
+.search_book_isbn {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  color:  #333D4B;
+}
+
+.search_book_isbn span {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-right: 20px;
+  color: #6B7684;
+}
+
+.search_action_wrapper {
+  display: flex;
+  gap: 20px
+}
+
+.search_action_btn {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 88px;
+  padding-left: 40px;
+  border: 2px solid #191F28;
+  border-radius: 20px;
+  gap: 33px;
+}
+
+.search_action_btn_text {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color:#191F28;
+}
+
+.search_action_btn_location {
+  width: 48px;
+  height: 48px;
+  background: url(../../img/type_a/location.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.search_action_btn_detail {
+  width: 48px;
+  height: 48px;
+  background: url(../../img/type_a/check.svg) no-repeat top center;
+  background-size: cover;
+}
